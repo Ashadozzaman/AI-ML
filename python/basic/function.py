@@ -12,7 +12,6 @@ def calculate_factorial(n):
     fact = 1
     for val in range(1,n+1):
         fact = fact * val
-
     return fact
 
 print(calculate_factorial(5))
