@@ -1,0 +1,38 @@
+{
+  "status": "success",
+  "timestamp": "2026-09-28T12:57:00Z",
+  "data": {
+    "records_returned": 3,
+    "items": [
+      {
+        "id": "item_001",
+        "name": "Wireless Headphones",
+        "category": "Electronics",
+        "price": 149.99,
+        "in_stock": true,
+        "tags": ["audio", "bluetooth", "gadget"]
+      },
+      {
+        "id": "item_002",
+        "name": "Ergonomic Desk Chair",
+        "category": "Furniture",
+        "price": 289.5,
+        "in_stock": false,
+        "tags": ["office", "ergonomic", "home"]
+      },
+      {
+        "id": "item_003",
+        "name": "Stainless Steel Water Bottle",
+        "category": "Accessories",
+        "price": 24.95,
+        "in_stock": true,
+        "tags": ["eco-friendly", "fitness", "outdoor"]
+      }
+    ]
+  },
+  "pagination": {
+    "current_page": 1,
+    "total_pages": 5,
+    "has_more": true
+  }
+}

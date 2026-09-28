@@ -1,0 +1,5 @@
+Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+this is demo file 
+to store some words
+for the Python activity
+that is to be solved by us.
