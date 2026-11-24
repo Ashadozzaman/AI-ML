@@ -1,0 +1,45 @@
+# ============================================================
+#  জামার ভোজ   (A Feast for the Coat)
+# ============================================================
+
+TITLE: জামার ভোজ | চতুর চাঁদুর চতুর্থ গল্প | 3.6
+
+CHARACTERS:
+raja         | রাজা      | king     | voice=bn-IN-BashkarNeural rate=-10 pitch=-8 fx=-2
+darwan       | দারোয়ান   | minister | voice=bn-BD-PradeepNeural rate=-2 pitch=-8 fx=-4 coat=70,100,150 trim=244,196,48 hat_main=170,50,50 hat_accent=244,196,48 build=1.18 face_w=148 nose=1.1 skin=190,134,96
+chandu_poor  | চাঁদু      | jester   | voice=bn-BD-PradeepNeural rate=4 pitch=8 fx=3 coat=150,140,120 trim=120,104,86 hat_main=130,120,110 hat_accent=100,90,80 pants=120,108,96 shoes=90,80,70
+chandu_rich  | চাঁদু      | jester   | voice=bn-BD-PradeepNeural rate=6 pitch=10 fx=3 coat=140,40,120 trim=244,196,48 hat_main=140,40,120 hat_accent=244,196,48 pants=244,196,48 shoes=140,40,120
+
+# ---------------- the palace gate ----------------
+SCENE garden: darwan@0.62:left
+> wait 0.4
+> enter chandu_poor from left to 0.30 sad 2.0
+darwan (angry, fist, to=chandu_poor): এই! থামো! আজ রাজামশাইয়ের বিরাট ভোজ। ছেঁড়া জামা পরে কেউ ভেতরে ঢুকতে পারবে না!
+chandu_poor (sad, palm, to=darwan): ভাই, রাজামশাই নিজেই আমাকে নিমন্ত্রণ করেছেন। আমি চাঁদু।
+darwan (angry, point, to=chandu_poor): হুঁ! নিমন্ত্রণ থাকলেই হল? এমন ময়লা পোশাকে রাজসভায় ঢোকা যায় না। যাও, ভাগো!
+chandu_poor (thinking, chest, to=darwan): বেশ। তাহলে আমি এক্ষুনি আসছি। || darwan:smirk
+> exit chandu_poor to left 2.0
+
+SCENE garden: darwan@0.62:left
+> wait 0.6
+> enter chandu_rich from left to 0.32 happy 2.2
+darwan (surprised, salute, to=chandu_rich): আরে বাপ রে! কী চমৎকার পোশাক! আসুন আসুন মহাশয়, ভেতরে আসুন!
+chandu_rich (smirk, open, to=darwan): ধন্যবাদ ভাই। দেখি, এবার আমাকে আটকাও কে!
+
+# ---------------- the feast ----------------
+SCENE court: darwan@0.14:right chandu_rich@0.44:right raja@0.74:left
+> wait 0.6
+raja (happy, open, to=chandu_rich): এসো চাঁদু, এসো! আজ তোমার জন্য সব সেরা খাবার সাজিয়েছি।
+> act chandu_rich touch 1.6 || raja:surprised darwan:surprised
+> popup "ছপাৎ!" 1.4
+raja (surprised, point, to=chandu_rich): চাঁদু! এ কী করছ? খাবার নিজে না খেয়ে জামায় ঢালছ কেন? || darwan:surprised
+chandu_rich (confident, chest, to=raja): মহারাজ, আজ আমি এই জামার কারণেই ভেতরে ঢুকতে পেরেছি। তাই আজকের ভোজ তো জামারই প্রাপ্য! || raja:think
+raja (angry, raise, to=darwan): দারোয়ান! এদিকে এসো! আজ তুমি আমার অতিথিকে তাড়িয়ে দিয়েছিলে কেন? || darwan:cower
+darwan (scared, salute, to=raja): ক্ষমা করুন মহারাজ। আমি কেবল পোশাক দেখেই মানুষ বিচার করেছিলাম।
+raja (angry, point, to=darwan): মানুষের সম্মান তার পোশাকে নয়, তার গুণে! আজ থেকে সবাইকে সমান সম্মান দেবে। || chandu_rich:smirk
+darwan (sad, shrug, to=raja): জি মহারাজ। আজ আমি বড় শিক্ষা পেলাম।
+chandu_rich (happy, open, to=darwan): ভাই, মন খারাপ কোরো না। চলো, তুমিও আজ আমাদের সঙ্গে ভোজ খাবে! || darwan:happy raja:laugh
+raja (happy, open, to=chandu_rich): হা হা হা! বাহ চাঁদু! এমন বন্ধু পাওয়া সত্যিই ভাগ্যের কথা। || chandu_rich:cheer
+> act chandu_rich bow 1.8 || raja:laugh darwan:cheer
+
+END: সমাপ্ত | জামার ভোজ | 3

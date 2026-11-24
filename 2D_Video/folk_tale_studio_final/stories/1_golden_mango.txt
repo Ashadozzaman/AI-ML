@@ -1,0 +1,55 @@
+# ============================================================
+#  চতুর চাঁদু ও সোনালি আম   (The Clever Jester and the Golden Mango)
+#  Edit this text, then run  MAKE_VIDEO.ipynb  -> a new video.
+#  Lines starting with # are notes and are ignored.
+# ============================================================
+
+TITLE: চতুর চাঁদু ও সোনালি আম | একটি লোককাহিনি | 3.6
+
+CHARACTERS:
+# id     | name on screen | look     | voice + (optional) look changes
+raja     | রাজা    | king     | voice=bn-IN-BashkarNeural rate=-10 pitch=-8 fx=-2
+mantri   | মন্ত্রী  | minister | voice=bn-BD-PradeepNeural rate=-4 pitch=-4 fx=-3
+chandu   | চাঁদু   | jester   | voice=bn-BD-PradeepNeural rate=6 pitch=10 fx=3
+
+# ---------------- scene 1 : the garden ----------------
+SCENE garden_empty: raja@0.42:right mantri@0.20:right
+> wait 0.5 || raja:think
+raja (angry, point, to=0.86): আমার সোনালি আম কোথায়? আজ সকালেও তো গাছে ঝুলছিল!
+> enter chandu from right to 0.64 happy 2.2
+mantri (scheming, point, to=chandu): মহারাজ, আমি নিজের চোখে দেখেছি, ভোরবেলা বাগানে ঘুরঘুর করছিল আপনার ভাঁড় চাঁদু। || chandu:surprised
+chandu (surprised, open, to=raja): আমি? মহারাজ, আমি তো কেবল ফুলের গন্ধ শুঁকতে এসেছিলাম! || mantri:smirk
+raja (angry, raise, to=chandu): চুপ! আজ সন্ধ্যার মধ্যে আসল চোর ধরতে না পারলে, তোমার শাস্তি হবে। || chandu:nervous
+chandu (confident, chest, to=raja): ঠিক আছে মহারাজ। সন্ধ্যায় সভায় সবার সামনে চোর ধরিয়ে দেব। || mantri:smirk
+
+# ---------------- scene 2 : the court at dusk ----------------
+SCENE court_evening: mantri@0.18:right chandu@0.36:right raja@0.72:left
+> prop pot at 0.54 scale 0.8
+> wait 0.6
+chandu (happy, open, to=raja): মহারাজ, এই হল জাদুর হাঁড়ি। এই হাঁড়ি চোরকে চিনতে পারে।
+chandu (confident, point, to=0.54): যে চোর, সে হাঁড়ি ছুঁলেই হাঁড়ি জোরে চিৎকার করে উঠবে। তাই সবাই অন্ধকারে একে একে হাঁড়িতে হাত রাখুন।
+mantri (nervous, hold, to=chandu): মহারাজ... হাঁড়ি কি সত্যিই চিৎকার করে? || chandu:smirk
+> dark 0.93 0.9 "অন্ধকারে একে একে সবাই হাঁড়িতে হাত রাখলেন…"
+> wait 2.6
+> set raja soot on
+> set chandu soot on
+> light 0.9
+> wait 0.7
+chandu (happy, show_hands, to=raja): এবার সবাই হাত দেখান! || raja:show_hands mantri:nervous
+raja (surprised, show_hands, to=chandu): আমার হাত কালো! চাঁদুর হাতও কালো! || chandu:show_hands mantri:nervous
+chandu (confident, point, to=mantri): আর মন্ত্রীমশাইয়ের হাত একদম পরিষ্কার! কারণ হাঁড়ির গায়ে আমি মাখিয়ে রেখেছিলাম কালি। || mantri:guilty raja:think
+chandu (happy, open, to=raja): যে নির্দোষ, সে ভয় পায় না, তাই হাঁড়ি ছুঁয়েছে। আর যে চোর, সে ভয়ে ছোঁয়নি! || mantri:cower raja:smirk
+mantri (scared, salute, to=raja): ক্ষমা করুন মহারাজ! লোভ সামলাতে পারিনি, আমিই আমটা খেয়ে ফেলেছি। || raja:stomp
+raja (happy, open, to=mantri): হা হা হা! মন্ত্রী, এবার তুমি দশটা আমগাছ লাগাবে। আর চাঁদু, তুমি পাবে সোনার মোহর। || chandu:cheer mantri:guilty
+chandu (happy, chest, to=raja): ধন্যবাদ মহারাজ। মনে রাখবেন, বুদ্ধি থাকলে সত্যি একদিন ঠিক বেরিয়ে আসে। || raja:laugh
+> act chandu bow 1.8 || raja:laugh mantri:guilty
+
+# ---------------- scene 3 : the garden again ----------------
+SCENE garden_empty: mantri@0.24:right raja@0.52:left chandu@0.78:left
+> set mantri emotion sad
+> wait 0.6
+raja (happy, point, to=mantri): মন্ত্রী, মনে রেখো, একটা আমগাছও যেন না শুকোয়!
+mantri (sad, shrug, to=raja): জি মহারাজ। আর কখনও লোভ করব না। || chandu:laugh
+> act chandu wave 2.0 || raja:laugh
+
+END: সমাপ্ত | চতুর চাঁদু ও সোনালি আম | 3

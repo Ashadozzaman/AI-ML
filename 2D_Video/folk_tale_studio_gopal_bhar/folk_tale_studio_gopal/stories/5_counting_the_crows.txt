@@ -1,0 +1,40 @@
+# ============================================================
+#  কাকের হিসাব   (Counting the Crows)
+# ============================================================
+
+TITLE: কাকের হিসাব | গোপাল ভাঁড়ের পঞ্চম গল্প | 3.6
+
+CHARACTERS:
+raja        | রাজা কৃষ্ণচন্দ্র | krishnachandra| voice=bn-IN-BashkarNeural rate=-10 pitch=-8 fx=-2
+mantri      | মন্ত্রী | mantri        | voice=bn-BD-PradeepNeural rate=-4 pitch=-4 fx=-3
+gopal       | গোপাল ভাঁড় | gopal         | voice=bn-BD-PradeepNeural rate=6 pitch=10 fx=3
+
+# ---------------- the court ----------------
+SCENE rajshobha: raja@0.72:left mantri@0.22:right
+> wait 0.5
+raja (thinking, open, to=mantri): মন্ত্রী, আজ সকালে একটা মজার কথা মনে এল। আমাদের শহরে মোট কয়টা কাক আছে, বলতে পারো?
+mantri (nervous, shrug, to=raja): কাক? মহারাজ, কাক কি কেউ গুনে রাখে? আমি তো এমন হিসাব জানি না।
+raja (angry, raise, to=mantri): জানো না? তাহলে শোনো, কাল সকালের মধ্যে ঠিক উত্তর না দিলে তোমার মন্ত্রীর পদ যাবে! || mantri:cower
+> enter gopal from right to 0.46 happy 2.0
+mantri (scheming, point, to=gopal): মহারাজ, গোপাল তো খুব চতুর। ও-ই বলুক, শহরে কাক কয়টা! || raja:think
+gopal (surprised, open, to=mantri): আমি? মন্ত্রীমশাই, আজ আপনার আমার ওপর এত বিশ্বাস কেন?
+gopal (thinking, chest, to=raja): মহারাজ, একটু সময় দিন। হিসাবটা বেশ কঠিন। || mantri:smirk
+> act gopal think 2.2 || raja:think mantri:smirk
+gopal (confident, raise, to=raja): মহারাজ, আমাদের শহরে ঠিক সাতানব্বইটা কাক আছে! || raja:surprised mantri:surprised
+raja (surprised, open, to=gopal): ঠিক সাতানব্বইটা? এত নিশ্চিত হলে কীভাবে?
+mantri (scheming, point, to=raja): মহারাজ, ও নিশ্চয়ই ভুল বলছে। কাক গুনে দেখা হোক!
+gopal (happy, palm, to=mantri): বেশ তো মন্ত্রীমশাই, গুনে আসুন! যদি এর চেয়ে বেশি হয়, বুঝবেন অন্য শহর থেকে কাকেদের আত্মীয়রা বেড়াতে এসেছে। || mantri:nervous
+gopal (happy, open, to=raja): আর যদি কম হয়, বুঝবেন আমাদের কাকেরা অন্য শহরে আত্মীয়ের বাড়ি বেড়াতে গেছে! || raja:smirk
+raja (happy, open, to=gopal): হা হা হা! চমৎকার উত্তর! কাক গুনে দেখার আর দরকারই নেই। || mantri:guilty
+mantri (sad, salute, to=raja): আমারই ভুল মহারাজ। গোপালের বুদ্ধির কাছে আমি হার মানলাম।
+
+# ---------------- the garden ----------------
+SCENE garden: mantri@0.20:right raja@0.46:right gopal@0.72:left
+> set mantri emotion sad
+> wait 0.6
+raja (happy, point, to=gopal): গোপাল, তুমি একটা পুরস্কার পাবে। বলো, কী চাও?
+gopal (confident, chest, to=raja): মহারাজ, আমি শুধু চাই আপনার রাজ্যে কেউ যেন কখনও না খেয়ে না থাকে।
+raja (happy, open, to=gopal): বাহ! এমন চাওয়ার কাছে কোনও পুরস্কারই বড় নয়। || mantri:happy
+> act gopal bow 1.8 || raja:laugh mantri:cheer
+
+END: সমাপ্ত | কাকের হিসাব | 3

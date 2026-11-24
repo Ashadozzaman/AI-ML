@@ -1,0 +1,37 @@
+# ============================================================
+#  গিন্নির রাগ ও মিষ্টির হাঁড়ি   (Ginni's Anger and the Pot of Sweets)
+#  A short home story with Chikna's wife, Ginni.
+#  Edit this text, then run  MAKE_VIDEO.ipynb  -> a new video.
+# ============================================================
+
+TITLE: গিন্নির রাগ ও মিষ্টির হাঁড়ি | চিকনা ভাঁড়ের ঘরের গল্প | 7.5
+
+CHARACTERS:
+# id     | name on screen | look   | voice + (optional) look changes
+chikna       | চিকনা ভাঁড় | chikna  | voice=bn-BD-PradeepNeural rate=6 pitch=10 fx=3
+ginni       | গিন্নি      | ginni  | voice=bn-BD-NabanitaNeural rate=4 pitch=4 fx=0
+
+# ---------------- scene 1 : the courtyard at home ----------------
+SCENE garden_empty: ginni@0.34:right
+> wait 0.4 || ginni:think
+ginni (angry, fist, to=0.8): সারাদিন রাজসভায় হাসি-ঠাট্টা, আর ঘরে একটা দানা চালও নেই!
+> enter chikna from right to 0.70 happy 2.2
+chikna (happy, open, to=ginni): গিন্নি, রাগ কোরো না। আজ রাজামশাই আমাকে এমন পুরস্কার দেবেন, শুনলে তোমার চোখ কপালে উঠবে! || ginni:smirk
+ginni (angry, point, to=chikna): রোজ একই কথা! আজ খালি হাতে ফিরলে রাতে তোমার ভাত বন্ধ। মনে থাকে যেন!  || chikna:nervous
+> exit chikna to right 2
+> wait 1.0
+
+# ---------------- scene 2 : the evening ----------------
+SCENE garden_empty: ginni@0.34:right
+> wait 0.4
+> enter chikna from right to 0.70 happy 2.2
+> prop pot at 0.54 scale 0.8
+chikna (happy, show_hands, to=ginni): দেখো গিন্নি, রাজামশাই এই হাঁড়ি ভরে পুরস্কার দিয়েছেন! || ginni:surprised
+ginni (surprised, open, to=chikna): হাঁড়ি ভরে? তাহলে নিশ্চয়ই সোনার মোহর! দাও, দাও, শিগগির দাও! || chikna:smirk
+> popup "ঢাকনা খুলতেই…" 1.6
+ginni (happy, show_hands, to=chikna): ওমা! এ তো মোহর নয়, এ যে মিষ্টি! || chikna:laugh
+chikna (confident, chest, to=ginni): মোহরে পেট ভরে না গিন্নি, মিষ্টিতে মন ভরে। আর রাগ পড়ে গেলে ঘরের ভাতও মিষ্টি লাগে! || ginni:laugh
+ginni (happy, open, to=chikna): হয়েছে হয়েছে, আর বাহাদুরি নয়। আজ আমি নিজের হাতে তোমাকে পাত পেড়ে খাওয়াব। || chikna:cheer
+> act chikna bow 1.8 || ginni:laugh
+
+END: সমাপ্ত | গিন্নির রাগ ও মিষ্টির হাঁড়ি | 3

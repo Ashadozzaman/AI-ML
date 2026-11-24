@@ -1,0 +1,143 @@
+{
+  "show_name": "Football Adda",
+  "title": "মেসি বনাম রোনালদো: সর্বকালের সেরা কে?",
+  "topic": "মেসি বনাম রোনালদো",
+  "language": "bn",
+  "target_duration_seconds": 120,
+  "duration_note": "Approximate two-minute script; actual duration depends on speaking speed and pauses.",
+  "presenters": [
+    {
+      "name": "Rahim",
+      "role": "Host",
+      "personality": "Professional, curious, balanced and confident",
+      "speaking_style": "Asks direct questions, controls the discussion and gives everyone a chance",
+      "position": "Neutral moderator"
+    },
+    {
+      "name": "Karim",
+      "role": "Football Fan",
+      "personality": "Funny, emotional, energetic and passionate",
+      "speaking_style": "Uses humour, emotional arguments and passionate examples",
+      "position": "Strong Messi supporter"
+    },
+    {
+      "name": "Jamal",
+      "role": "Football Analyst",
+      "personality": "Logical, analytical, calm but argumentative",
+      "speaking_style": "Uses tactical reasoning, comparisons and evidence; challenges exaggerations",
+      "position": "Strong Ronaldo supporter"
+    }
+  ],
+  "conversation": [
+    {
+      "speaker": "Rahim",
+      "emotion": "welcoming",
+      "dialogue": "স্বাগতম ‘ফুটবল আড্ডা’ অনুষ্ঠানে। আজকের প্রশ্নটা এমন, যেটা নিয়ে বন্ধুদের আড্ডা কখনো শেষ হয় না—সর্বকালের সেরা কে, লিওনেল মেসি নাকি ক্রিস্টিয়ানো রোনালদো? করিম ভাই, আপনি তো প্রস্তুত হয়েই এসেছেন!"
+    },
+    {
+      "speaker": "Karim",
+      "emotion": "excited",
+      "dialogue": "প্রস্তুত না হয়ে উপায় আছে? মেসির নাম শুনলেই আমার ফুটবলীয় হৃদয় নাচতে শুরু করে! আমার কাছে মেসি শুধু গোল করেন না, পুরো খেলাটাকেই সুন্দর করে তোলেন।"
+    },
+    {
+      "speaker": "Jamal",
+      "emotion": "amused",
+      "dialogue": "হৃদয় নাচলে ভালো, কিন্তু মাঠে তো পা দিয়ে খেলতে হয়! রোনালদোর শারীরিক সক্ষমতা, গোল করার ক্ষুধা, হেডিং আর বিভিন্ন লিগে নিজেকে প্রমাণ করার ক্ষমতা অসাধারণ।"
+    },
+    {
+      "speaker": "Rahim",
+      "emotion": "curious",
+      "dialogue": "দুজনেরই যুক্তি আছে। কিন্তু একটা বিষয় পরিষ্কার করি—আমরা কি শুধু গোলের সংখ্যা দিয়ে সেরা খেলোয়াড় ঠিক করব, নাকি দলের খেলায় অবদানও বিবেচনা করব?"
+    },
+    {
+      "speaker": "Karim",
+      "emotion": "confident",
+      "dialogue": "অবশ্যই পুরো খেলাটা দেখতে হবে। মেসি গোল করেন, আবার সতীর্থদের জন্য সুযোগ তৈরি করেন, পাস দিয়ে ডিফেন্স ভেঙে দেন। তিনি একই সঙ্গে গোলদাতা এবং প্লেমেকার।"
+    },
+    {
+      "speaker": "Jamal",
+      "emotion": "challenging",
+      "dialogue": "সেটা ঠিক। তবে রোনালদোও শুধু গোলমেশিন নন। তিনি জায়গা বুঝে দৌড়ান, চাপের মুহূর্তে দায়িত্ব নেন এবং বড় ম্যাচে নিজের উপস্থিতি জানান দেন।"
+    },
+    {
+      "speaker": "Rahim",
+      "emotion": "playful",
+      "dialogue": "দুজনের প্রশংসা শুনে মনে হচ্ছে আজকের অনুষ্ঠান শেষে কাউকেই বাদ দেওয়া যাবে না! করিম ভাই, রোনালদোর চ্যাম্পিয়ন্স লিগ পারফরম্যান্স নিয়ে আপনার বক্তব্য কী?"
+    },
+    {
+      "speaker": "Karim",
+      "emotion": "teasing",
+      "dialogue": "রোনালদোর চ্যাম্পিয়ন্স লিগ রেকর্ড অবশ্যই অসাধারণ। কিন্তু মেসির ড্রিবলিং দেখলে ডিফেন্ডাররা কখনো কখনো মনে হয় নিজেরাই পথ হারিয়ে ফেলেন!"
+    },
+    {
+      "speaker": "Jamal",
+      "emotion": "laughing",
+      "dialogue": "ড্রিবলিং দিয়ে সব ম্যাচ জেতা যায় না, ভাই! রোনালদোর পজিশনিং, ফিনিশিং আর বড় মুহূর্তে গোল করার মানসিকতা তাঁকে আলাদা করে।"
+    },
+    {
+      "speaker": "Rahim",
+      "emotion": "serious",
+      "dialogue": "আচ্ছা, আন্তর্জাতিক ফুটবলের কথা বলি। মেসির বিশ্বকাপ জয় তাঁর ক্যারিয়ারে বড় অর্জন। অন্যদিকে রোনালদো পর্তুগালের হয়ে ইউরো জিতেছেন। এই অর্জনগুলো তুলনায় কতটা গুরুত্বপূর্ণ?"
+    },
+    {
+      "speaker": "Karim",
+      "emotion": "proud",
+      "dialogue": "বিশ্বকাপ জেতা বিশাল ব্যাপার। মেসি শুধু ট্রফি জেতেননি, টুর্নামেন্টেও গুরুত্বপূর্ণ ভূমিকা রেখেছেন। তাঁর জাতীয় দলের যাত্রাটাও দারুণ অনুপ্রেরণার।"
+    },
+    {
+      "speaker": "Jamal",
+      "emotion": "thoughtful",
+      "dialogue": "রোনালদোর ইউরো জয়ও কম গুরুত্বপূর্ণ নয়। পর্তুগালের মতো দলের হয়ে আন্তর্জাতিক শিরোপা জেতা সহজ ছিল না। দুজনের অর্জনই সম্মানের সঙ্গে দেখা উচিত।"
+    },
+    {
+      "speaker": "Rahim",
+      "emotion": "curious",
+      "dialogue": "তাহলে কি আমরা বলতে পারি, মেসি বেশি সৃজনশীল আর রোনালদো বেশি সরাসরি গোলমুখী?"
+    },
+    {
+      "speaker": "Karim",
+      "emotion": "enthusiastic",
+      "dialogue": "অনেকটা তাই। মেসি বল পায়ে পেলে কী করবেন, সেটা আগে থেকে বোঝা কঠিন। তাঁর পাস, ড্রিবলিং আর খেলার গতি নিয়ন্ত্রণ করার ক্ষমতা অসাধারণ।"
+    },
+    {
+      "speaker": "Jamal",
+      "emotion": "confident",
+      "dialogue": "আর রোনালদোর শক্তি হলো নিজেকে বারবার নতুনভাবে তৈরি করা। বয়স বাড়ার পরও ফিটনেস ধরে রাখা, ভিন্ন পরিবেশে মানিয়ে নেওয়া—এগুলোও বড় গুণ।"
+    },
+    {
+      "speaker": "Rahim",
+      "emotion": "playful",
+      "dialogue": "একটা দ্রুত প্রশ্ন—আপনাদের একজনকে নিজের দলে নিতে হলে কাকে নেবেন?"
+    },
+    {
+      "speaker": "Karim",
+      "emotion": "excited",
+      "dialogue": "মেসি! তাঁকে বল দিন, তারপর আরাম করে বসে খেলা উপভোগ করুন।"
+    },
+    {
+      "speaker": "Jamal",
+      "emotion": "amused",
+      "dialogue": "আমি রোনালদো নেব। গোল দরকার? বক্সে বল দিন, বাকিটা তিনি সামলাবেন!"
+    },
+    {
+      "speaker": "Rahim",
+      "emotion": "balanced",
+      "dialogue": "দর্শক, দেখলেন তো—একই প্রশ্নে দুই রকম উত্তর! আসলে মেসি ও রোনালদো দুইজনই নিজেদের সময়ে ফুটবলকে অন্য উচ্চতায় নিয়ে গেছেন।"
+    },
+    {
+      "speaker": "Karim",
+      "emotion": "friendly",
+      "dialogue": "আমি মেসিকে সেরা বলব, কিন্তু রোনালদোর পরিশ্রম আর অর্জনকে ছোট করার কোনো সুযোগ নেই।"
+    },
+    {
+      "speaker": "Jamal",
+      "emotion": "respectful",
+      "dialogue": "আমিও রোনালদোকে এগিয়ে রাখব, তবে মেসির প্রতিভা ও সাফল্য অস্বীকার করা যায় না। দুজনের কারণেই আমরা অসাধারণ ফুটবল দেখেছি।"
+    },
+    {
+      "speaker": "Rahim",
+      "emotion": "closing",
+      "dialogue": "তাহলে আজকের সিদ্ধান্ত—একজনকে বেছে নেওয়া ব্যক্তিগত পছন্দ, কিন্তু দুজনের অবদানই ঐতিহাসিক। আপনারা কাকে সেরা মনে করেন, কমেন্টে জানান। আজকের ‘ফুটবল আড্ডা’ এখানেই শেষ। আবার দেখা হবে, ধন্যবাদ!"
+    }
+  ]
+}
