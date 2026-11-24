@@ -1,0 +1,40 @@
+# ============================================================
+#  চোরের মাথায় খড়   (The Straw on the Thief's Head)
+# ============================================================
+
+TITLE: চোরের মাথায় খড় | গোপাল ভাঁড়ের তৃতীয় গল্প | 7.5
+
+CHARACTERS:
+raja        | রাজা কৃষ্ণচন্দ্র | krishnachandra| voice=bn-IN-BashkarNeural rate=-10 pitch=-8 fx=-2
+bonik       | বণিক | minister      | voice=bn-BD-PradeepNeural rate=-2 pitch=-6 fx=-4 coat=60,110,170 trim=244,196,48 hat_main=60,110,170 hat_accent=244,196,48 build=1.15 face_w=146 nose=1.2
+chor        | বাঁশিওয়ালা | minister      | voice=bn-IN-BashkarNeural rate=4 pitch=4 fx=2 coat=84,84,96 trim=60,60,70 hat=none beard=goatee skin=176,122,86 build=0.88 face_w=126 shoes=60,50,50
+gopal       | গোপাল ভাঁড় | gopal         | voice=bn-BD-PradeepNeural rate=6 pitch=10 fx=3
+
+# ---------------- the bazaar ----------------
+SCENE market: bonik@0.28:right chor@0.64:left
+> wait 0.5
+bonik (scared, open, to=0.64): হায় হায়! আমার সোনার মোহরের থলিটা কে নিল? এই তো একটু আগেই এখানে ছিল!
+> enter gopal from right to 0.46 happy 2.0
+gopal (happy, open, to=bonik): কী হয়েছে ভাই? এমন চেঁচাচ্ছ কেন?
+bonik (scared, point, to=chor): গোপালবাবু, আমার থলি চুরি গেছে। এখানে তো আমি আর এই বাঁশিওয়ালা ছাড়া কেউ ছিল না! || chor:nervous
+chor (scared, palm, to=gopal): আমি? আমি কিছুই জানি না বাবু! আমি তো ঘুরে ঘুরে বাঁশি বিক্রি করছিলাম।
+gopal (thinking, chest, to=bonik): বেশ। তাহলে আমি এখনই চোর ধরে দিচ্ছি। আমার একটা বিশেষ ক্ষমতা আছে।
+gopal (confident, raise, to=bonik): আমি স্পষ্ট দেখতে পাচ্ছি, চোরের মাথায় একটা খড়ের টুকরো লেগে আছে! || bonik:surprised chor:nervous
+> act chor think 1.4 || bonik:surprised gopal:smirk
+gopal (happy, point, to=chor): ধরা পড়ে গেছ! খড়ের কথা শুনেই তুমি নিজের মাথায় হাত দিলে কেন? || chor:cower
+chor (scared, salute, to=bonik): ক্ষমা করুন! লোভে পড়ে থলিটা আমিই নিয়েছিলাম। || bonik:angry
+
+# ---------------- the court ----------------
+SCENE rajshobha: bonik@0.18:right chor@0.38:right gopal@0.56:right raja@0.76:left
+> wait 0.6
+raja (angry, point, to=chor): চুরি করা মহাপাপ! বণিকের মোহর ফেরত দাও, আর এক মাস রাজবাড়ির বাগানে কাজ করবে। || chor:cower
+chor (sad, salute, to=raja): জি মহারাজ। আর কখনও চুরি করব না।
+raja (happy, open, to=gopal): গোপাল, তোমার বুদ্ধির কাছে সবাই হার মানে। বলো তো, তুমি কীভাবে বুঝলে?
+gopal (confident, chest, to=raja): মহারাজ, আসলে চোরের মাথায় কোনও খড়ই ছিল না! || raja:surprised bonik:surprised
+gopal (happy, open, to=raja): যার মনে পাপ থাকে, সে সামান্য কথাতেই ভয় পেয়ে নিজেই ধরা পড়ে। || raja:laugh
+bonik (happy, salute, to=gopal): ধন্যবাদ গোপালবাবু। আপনি না থাকলে আমার সব মোহর যেত!
+raja (happy, open, to=gopal): হা হা হা! চমৎকার! আজ থেকে গোপালই আমার বিচারসভার সেরা বন্ধু।
+gopal (happy, chest, to=raja): মহারাজ, মনে রাখবেন, সৎ মানুষের ভয় নেই, আর চোরের মন সব সময় চমকে থাকে।
+> act gopal bow 1.8 || raja:laugh bonik:cheer chor:guilty
+
+END: সমাপ্ত | চোরের মাথায় খড় | 3

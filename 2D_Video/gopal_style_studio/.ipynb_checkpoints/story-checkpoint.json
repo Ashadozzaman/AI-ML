@@ -1,0 +1,366 @@
+{
+  "title": "চতুর চাঁদু ও সোনালি আম",
+  "fps": 24,
+  "ground_y": 596,
+  "speaker_zoom": 1.08,
+  "characters": {
+    "raja": {
+      "label": "রাজা",
+      "design": {
+        "base": "king"
+      },
+      "voice": {
+        "name": "bn-IN-BashkarNeural",
+        "rate": -10,
+        "pitch": -12
+      }
+    },
+    "mantri": {
+      "label": "মন্ত্রী",
+      "design": {
+        "base": "minister"
+      },
+      "voice": {
+        "name": "bn-BD-PradeepNeural",
+        "rate": -4,
+        "pitch": -6
+      }
+    },
+    "chandu": {
+      "label": "চাঁদু",
+      "design": {
+        "base": "jester"
+      },
+      "voice": {
+        "name": "bn-BD-PradeepNeural",
+        "rate": 6,
+        "pitch": 12
+      }
+    }
+  },
+  "beats": [
+    {
+      "do": "title",
+      "text": "চতুর চাঁদু ও সোনালি আম",
+      "sub": "একটি লোককাহিনি",
+      "dur": 3.6
+    },
+    {
+      "do": "scene",
+      "bg": "garden_empty",
+      "cast": {
+        "raja": {
+          "x": 0.42,
+          "face": "right"
+        },
+        "mantri": {
+          "x": 0.2,
+          "face": "right"
+        }
+      }
+    },
+    {
+      "do": "wait",
+      "dur": 0.5,
+      "also": {
+        "raja": "think"
+      }
+    },
+    {
+      "do": "say",
+      "who": "raja",
+      "emotion": "angry",
+      "gesture": "point",
+      "to": 0.86,
+      "text": "আমার সোনালি আম কোথায়? আজ সকালেও তো গাছে ঝুলছিল!"
+    },
+    {
+      "do": "enter",
+      "who": "chandu",
+      "from": "right",
+      "to": 0.64,
+      "dur": 2.2,
+      "emotion": "happy"
+    },
+    {
+      "do": "say",
+      "who": "mantri",
+      "emotion": "scheming",
+      "gesture": "point",
+      "to": "chandu",
+      "text": "মহারাজ, আমি নিজের চোখে দেখেছি, ভোরবেলা বাগানে ঘুরঘুর করছিল আপনার ভাঁড় চাঁদু।",
+      "also": {
+        "chandu": "surprised"
+      }
+    },
+    {
+      "do": "say",
+      "who": "chandu",
+      "emotion": "surprised",
+      "gesture": "open",
+      "to": "raja",
+      "text": "আমি? মহারাজ, আমি তো কেবল ফুলের গন্ধ শুঁকতে এসেছিলাম!",
+      "also": {
+        "mantri": "smirk"
+      }
+    },
+    {
+      "do": "say",
+      "who": "raja",
+      "emotion": "angry",
+      "gesture": "raise",
+      "to": "chandu",
+      "text": "চুপ! আজ সন্ধ্যার মধ্যে আসল চোর ধরতে না পারলে, তোমার শাস্তি হবে।",
+      "also": {
+        "chandu": "nervous"
+      }
+    },
+    {
+      "do": "say",
+      "who": "chandu",
+      "emotion": "confident",
+      "gesture": "chest",
+      "to": "raja",
+      "text": "ঠিক আছে মহারাজ। সন্ধ্যায় সভায় সবার সামনে চোর ধরিয়ে দেব।",
+      "also": {
+        "mantri": "smirk"
+      }
+    },
+    {
+      "do": "scene",
+      "bg": "court_evening",
+      "cast": {
+        "mantri": {
+          "x": 0.18,
+          "face": "right"
+        },
+        "chandu": {
+          "x": 0.36,
+          "face": "right",
+          "emotion": "happy"
+        },
+        "raja": {
+          "x": 0.72,
+          "face": "left"
+        }
+      }
+    },
+    {
+      "do": "prop",
+      "name": "pot",
+      "x": 0.54,
+      "show": true,
+      "scale": 0.8
+    },
+    {
+      "do": "wait",
+      "dur": 0.6
+    },
+    {
+      "do": "say",
+      "who": "chandu",
+      "emotion": "happy",
+      "gesture": "open",
+      "to": "raja",
+      "text": "মহারাজ, এই হল জাদুর হাঁড়ি। এই হাঁড়ি চোরকে চিনতে পারে।"
+    },
+    {
+      "do": "say",
+      "who": "chandu",
+      "emotion": "confident",
+      "gesture": "point",
+      "to": 0.54,
+      "text": "যে চোর, সে হাঁড়ি ছুঁলেই হাঁড়ি জোরে চিৎকার করে উঠবে। তাই সবাই অন্ধকারে একে একে হাঁড়িতে হাত রাখুন।"
+    },
+    {
+      "do": "say",
+      "who": "mantri",
+      "emotion": "nervous",
+      "to": "chandu",
+      "hold": true,
+      "text": "মহারাজ... হাঁড়ি কি সত্যিই চিৎকার করে?",
+      "also": {
+        "chandu": "smirk"
+      }
+    },
+    {
+      "do": "dark",
+      "level": 0.93,
+      "dur": 0.9,
+      "text": "অন্ধকারে একে একে সবাই হাঁড়িতে হাত রাখলেন…"
+    },
+    {
+      "do": "wait",
+      "dur": 2.6
+    },
+    {
+      "do": "set",
+      "who": "raja",
+      "soot": true
+    },
+    {
+      "do": "set",
+      "who": "chandu",
+      "soot": true
+    },
+    {
+      "do": "dark",
+      "level": 0,
+      "dur": 0.9
+    },
+    {
+      "do": "wait",
+      "dur": 0.7
+    },
+    {
+      "do": "say",
+      "who": "chandu",
+      "emotion": "happy",
+      "gesture": "show_hands",
+      "to": "raja",
+      "text": "এবার সবাই হাত দেখান!",
+      "also": {
+        "raja": "show_hands",
+        "mantri": "nervous"
+      }
+    },
+    {
+      "do": "say",
+      "who": "raja",
+      "emotion": "surprised",
+      "gesture": "show_hands",
+      "to": "chandu",
+      "text": "আমার হাত কালো! চাঁদুর হাতও কালো!",
+      "also": {
+        "chandu": "show_hands",
+        "mantri": "nervous"
+      }
+    },
+    {
+      "do": "say",
+      "who": "chandu",
+      "emotion": "confident",
+      "gesture": "point",
+      "to": "mantri",
+      "text": "আর মন্ত্রীমশাইয়ের হাত একদম পরিষ্কার! কারণ হাঁড়ির গায়ে আমি মাখিয়ে রেখেছিলাম কালি।",
+      "also": {
+        "mantri": "guilty",
+        "raja": "think"
+      }
+    },
+    {
+      "do": "say",
+      "who": "chandu",
+      "emotion": "happy",
+      "gesture": "open",
+      "to": "raja",
+      "text": "যে নির্দোষ, সে ভয় পায় না, তাই হাঁড়ি ছুঁয়েছে। আর যে চোর, সে ভয়ে ছোঁয়নি!",
+      "also": {
+        "mantri": "cower",
+        "raja": "smirk"
+      }
+    },
+    {
+      "do": "say",
+      "who": "mantri",
+      "emotion": "scared",
+      "gesture": "salute",
+      "to": "raja",
+      "text": "ক্ষমা করুন মহারাজ! লোভ সামলাতে পারিনি, আমিই আমটা খেয়ে ফেলেছি।",
+      "also": {
+        "raja": "stomp"
+      }
+    },
+    {
+      "do": "say",
+      "who": "raja",
+      "emotion": "happy",
+      "gesture": "open",
+      "to": "mantri",
+      "text": "হা হা হা! মন্ত্রী, এবার তুমি দশটা আমগাছ লাগাবে। আর চাঁদু, তুমি পাবে সোনার মোহর।",
+      "also": {
+        "chandu": "cheer",
+        "mantri": "guilty"
+      }
+    },
+    {
+      "do": "say",
+      "who": "chandu",
+      "emotion": "happy",
+      "gesture": "chest",
+      "to": "raja",
+      "text": "ধন্যবাদ মহারাজ। মনে রাখবেন, বুদ্ধি থাকলে সত্যি একদিন ঠিক বেরিয়ে আসে।",
+      "also": {
+        "raja": "laugh"
+      }
+    },
+    {
+      "do": "act",
+      "who": "chandu",
+      "action": "bow",
+      "dur": 1.8,
+      "also": {
+        "raja": "laugh",
+        "mantri": "guilty"
+      }
+    },
+    {
+      "do": "scene",
+      "bg": "garden_empty",
+      "cast": {
+        "mantri": {
+          "x": 0.24,
+          "face": "right",
+          "emotion": "sad"
+        },
+        "raja": {
+          "x": 0.52,
+          "face": "left"
+        },
+        "chandu": {
+          "x": 0.78,
+          "face": "left",
+          "emotion": "happy"
+        }
+      }
+    },
+    {
+      "do": "wait",
+      "dur": 0.6
+    },
+    {
+      "do": "say",
+      "who": "raja",
+      "emotion": "happy",
+      "gesture": "point",
+      "to": "mantri",
+      "text": "মন্ত্রী, মনে রেখো, একটা আমগাছও যেন না শুকোয়!"
+    },
+    {
+      "do": "say",
+      "who": "mantri",
+      "emotion": "sad",
+      "gesture": "shrug",
+      "to": "raja",
+      "text": "জি মহারাজ। আর কখনও লোভ করব না।",
+      "also": {
+        "chandu": "laugh"
+      }
+    },
+    {
+      "do": "act",
+      "who": "chandu",
+      "action": "wave",
+      "dur": 2.0,
+      "also": {
+        "raja": "laugh"
+      }
+    },
+    {
+      "do": "end",
+      "text": "সমাপ্ত",
+      "sub": "চতুর চাঁদু ও সোনালি আম",
+      "dur": 3.0
+    }
+  ]
+}

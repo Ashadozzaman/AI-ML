@@ -1,0 +1,34 @@
+# ============================================================
+#  কুরআন শেখা   (Learning the Quran, never give up)  - about 1 min 40 s
+#  Hadith: Sahih Bukhari 5027;  Sahih Bukhari 4937 + Sahih Muslim 798
+#  (the open book on the stand has no writing drawn on it)
+# ============================================================
+THEME: islamic
+TITLE: কুরআন শেখা | ছোটদের জন্য ইসলামিক শিক্ষা | 4
+
+CHARACTERS:
+hujur   | হুজুর  | hujur   | voice=bn-IN-BashkarNeural rate=-8 pitch=-6 fx=-2
+rakib   | রাকিব  | student | voice=bn-BD-PradeepNeural rate=4 pitch=4 fx=2
+jannat  | জান্নাত | girl    | voice=bn-IN-TanishaaNeural rate=6 pitch=8 fx=2
+
+SCENE classroom: hujur@0.22:right rakib@0.66:left jannat@0.86:left
+> prop rehal at 0.42 scale 0.9
+rakib (sad, shrug, to=hujur): হুজুর, কুরআন পড়তে গিয়ে আমি বারবার আটকে যাই। মনে হয়, আমার দ্বারা হবে না।
+jannat (happy, open, to=rakib): আমিও আটকে যেতাম ভাইয়া! এখন রোজ পাঁচ মিনিট করে পড়ি, আর আস্তে আস্তে সহজ হয়ে গেছে।
+hujur (happy, chest, to=jannat): মাশাআল্লাহ জান্নাত, কী সুন্দর কথা! রাকিব, এবার মন দিয়ে শোনো। নবীজি সাল্লাল্লাহু আলাইহি ওয়াসাল্লাম বলেছেন:
+> hadith "তোমাদের মধ্যে সর্বোত্তম সে, যে কুরআন শেখে এবং অন্যকে শেখায়।" "সহীহ বুখারী ৫০২৭"
+hujur (happy, raise, to=rakib): কুরআন শেখা আর শেখানো, দুটোই অনেক বড় সম্মানের কাজ।
+rakib (thinking, palm, to=hujur): কিন্তু হুজুর, আমি তো ভুল পড়ে ফেলি। তখন কী হবে?
+hujur (happy, palm, to=rakib): নবীজি সাল্লাল্লাহু আলাইহি ওয়াসাল্লাম এর জবাবও দিয়েছেন। শোনো বাবা:
+> hadith "যে কুরআন পড়ে আটকে আটকে, কষ্ট করে পড়ে, তার জন্য রয়েছে দ্বিগুণ সওয়াব।" "সহীহ বুখারী ৪৯৩৭; সহীহ মুসলিম ৭৯৮ (ভাবার্থ)"
+hujur (happy, chest, to=rakib): মানে চেষ্টাটাই আল্লাহর কাছে অনেক দামি। শুধু থেমে যেও না, আর একজন ভালো উস্তাদের কাছে শুদ্ধ করে শিখো।
+> hadith off
+> tip "রোজ অল্প অল্প করে পড়ো। আটকে গেলেও থেমো না।"
+rakib (happy, chest, to=hujur): তাহলে আমি আর হাল ছাড়ব না, ইনশাআল্লাহ। রোজ পাঁচ মিনিট করে পড়ব।
+hujur (happy, open, to=rakib): আলহামদুলিল্লাহ। আল্লাহ তোমার চেষ্টা কবুল করুন।
+> tip off
+jannat (happy, raise, to=rakib): ভাইয়া, আজ থেকে আমি তোমার শিক্ষিকা! || rakib:laugh
+rakib (happy, show_hands, to=jannat): ঠিক আছে শিক্ষিকা আপা! কিন্তু হোমওয়ার্ক বেশি দিও না, কেমন? || hujur:laugh
+> prop rehal off
+
+END: আল্লাহ হাফেজ | ভালো লাগলে শেয়ার করুন | 3

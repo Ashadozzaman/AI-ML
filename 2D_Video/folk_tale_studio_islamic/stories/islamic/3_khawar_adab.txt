@@ -1,0 +1,34 @@
+# ============================================================
+#  খাওয়ার সুন্দর আদব   (Table manners)  - about 1 min 30 s
+#  Hadith: Sahih Bukhari 5376, Sahih Muslim 2022
+# ============================================================
+THEME: islamic
+TITLE: খাওয়ার সুন্দর আদব | ছোটদের জন্য ইসলামিক শিক্ষা | 4
+
+CHARACTERS:
+baba  | বাবা  | baba  | voice=bn-BD-PradeepNeural rate=0 pitch=-4 fx=-1
+ma    | মা    | ma    | voice=bn-BD-NabanitaNeural rate=-2 pitch=2
+child | আরিশ | child | voice=bn-BD-PradeepNeural rate=6 pitch=12 fx=5
+
+SCENE home: baba@0.18:right ma@0.84:left child@0.70:left
+> prop dastarkhan at 0.46 scale 0.72
+ma (happy, open, to=child): আজ বিরিয়ানি রান্না করেছি! হাত ধুয়ে এসো, আরিশ। || child:cheer
+child (happy, show_hands, to=ma): বিরিয়ানি! আমি তো সকাল থেকে অপেক্ষা করছি! || baba:laugh
+> popup "ঝপ!" 1.0
+> act child cheer 1.2
+baba (surprised, raise, to=child): থামো, থামো আরিশ! বিসমিল্লাহ না বলেই খাওয়া শুরু? তাও আবার বাঁ হাতে? || child:nervous
+child (nervous, shrug, to=baba): ইয়ে... ক্ষুধার জ্বালায় ভুলেই গিয়েছিলাম, আব্বু।
+baba (happy, palm, to=child): ঠিক আছে, শিখে নাও। নবীজি সাল্লাল্লাহু আলাইহি ওয়াসাল্লাম একটি ছোট্ট ছেলেকে ঠিক এই কথাটাই শিখিয়েছিলেন।
+> hadith "বিসমিল্লাহ বলো, ডান হাতে খাও, আর তোমার নিজের সামনের দিক থেকে খাও।" "সহীহ বুখারী ৫৩৭৬; সহীহ মুসলিম ২০২২"
+baba (happy, chest, to=child): প্রথমে বিসমিল্লাহ। তারপর ডান হাত। আর নিজের সামনের দিক থেকে।
+> hadith off
+child (happy, chest, to=baba): বিসমিল্লাহ! ডান হাত! সামনের দিক! কিন্তু আব্বু, আমার সামনে তো শুধু আলুর টুকরা। || ma:laugh
+baba (happy, open, to=child): হা হা! তাহলে আজ আলু দিয়েই শুরু করো। আর খাওয়া শেষে আলহামদুলিল্লাহ বলতে ভুলো না।
+> tip "বিসমিল্লাহ বলো, ডান হাতে খাও, সামনের দিক থেকে খাও, শেষে আলহামদুলিল্লাহ।"
+ma (happy, palm, to=child): আর বাবা, যতটুকু দরকার ততটুকুই নাও। খাবার নষ্ট করা ঠিক নয়।
+child (happy, chest, to=ma): জি আম্মু! আজ থেকে আমি সুন্দর করেই খাব। আলহামদুলিল্লাহ, আমার আম্মু সেরা রাঁধুনি!
+> tip off
+ma (happy, show_hands, to=child): ঠিক আছে ঠিক আছে, এবার খাও। আর আলুর টুকরা শেষ হলে ভাতও আছে। || baba:laugh
+> prop dastarkhan off
+
+END: আল্লাহ হাফেজ | ভালো লাগলে শেয়ার করুন | 3

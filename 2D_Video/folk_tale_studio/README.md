@@ -1,0 +1,55 @@
+# Folk-tale cartoon studio · JupyterLab
+
+Write a story as plain text → run one notebook → get a 2D cut-out cartoon video (Gopal-Bhar-style folk tales,
+Bangla captions, lip sync, walking, gestures, camera moves). Runs on a normal laptop, **no GPU**.
+
+```
+stories/1_golden_mango.txt       a 2-minute story (king, minister, jester)
+stories/2_smell_of_sweets.txt    a different story: new characters, market background  (same project!)
+MAKE_VIDEO.ipynb                 <- the only notebook you need: pick a story, Run All
+characters.ipynb                 preview / change how characters look
+SYNTAX.md                        how to write a story (one page)
+```
+
+## Install (once)
+```bash
+# ffmpeg must be on PATH    (Ubuntu: sudo apt install ffmpeg | macOS: brew install ffmpeg | Windows: https://ffmpeg.org)
+pip install -r requirements.txt
+jupyter lab        # run inside this folder
+```
+
+## Make a new video
+1. Copy `stories/1_golden_mango.txt` to `stories/my_story.txt` and write your story (see `SYNTAX.md`).
+2. Open `MAKE_VIDEO.ipynb`, set `STORY = "stories/my_story.txt"`, **Run → Run All Cells**.
+3. The video is saved in `output/my_story.mp4`.
+
+If something in the story file is wrong, the notebook tells you the line number and what to fix.
+
+## About the voices (important)
+* Real voices are made by **edge-tts** (free Microsoft neural voices) when you run the *Voices* cell. This needs internet.
+* Dialogue is mixed with automatic background-music ducking: music becomes quieter while a character speaks and returns during pauses. The final mix is peak-limited to reduce clipping.\n* The *humming* sound some previews use is **only a placeholder** for testing timing. It is never used unless you set
+  `USE_DRAFT_VOICE_IF_OFFLINE = True`.
+* Only lines you changed get a new voice; all other lines are reused. (Voice files are named `line_03_ab12cd.mp3`.)
+
+**Make the characters sound different and better**
+| tool | how |
+|---|---|
+| speed / pitch | `rate=-10` (slower) and `pitch=-8` in the character's `CHARACTERS:` line |
+| voice effect | `fx=-3` makes a voice deeper/older, `fx=+3` higher/younger (works on any voice, changes no speed) |
+| different voices | `voice=bn-BD-PradeepNeural`, `bn-IN-BashkarNeural` (male), `bn-BD-NabanitaNeural`, `bn-IN-TanishaaNeural` (female) |
+| emotion | `(angry)`, `(scared)`, `(happy)`... in a dialogue line change speed and pitch a little |
+| **your own voice** | record a line on your phone, save it as `audio/line_03.mp3` (number of the line). It is used instead of the generated voice. Best quality of all. |
+| another voice service | `await audio.tts_all(story, "audio", provider=my_provider)` where `my_provider` is an async function `(text, voice, emotion, out_path)` that saves an audio file using your service (ElevenLabs, Google, Azure...). Check that service's documentation for Bangla support. |
+
+## How it works
+`engine/script.py` reads your story → `timeline.py` plans every moment → `anim.py` poses the puppets
+(breathing, walking, gestures, emotions) → `rig.py` draws paper-cut-out characters (parts rotated around joints, made by `art.py`) →
+`audio.py` makes voices and turns loudness into mouth shapes → `render.py` adds camera, captions and sends frames to ffmpeg.
+
+## Troubleshooting
+* **Bangla letters look broken:** Pillow needs the *raqm* engine. Linux `sudo apt install libraqm0 libfribidi0`, macOS `brew install fribidi`, then `pip install --force-reinstall pillow`.
+* **Boxes instead of commas in captions:** add a font path to `LATIN_FONT_CANDIDATES` in `engine/text.py`.
+* **"No voice file for line_..":** run the Voices cell (needs internet) or record the line yourself.
+* **Video too long/short:** the notebook prints the length before rendering. Add or remove lines or `> wait` pauses.
+
+Credits: Noto Sans Bengali font (SIL Open Font License). Characters, backgrounds and both stories are original.

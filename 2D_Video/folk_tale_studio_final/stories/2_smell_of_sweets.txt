@@ -1,0 +1,42 @@
+# ============================================================
+#  গন্ধের দাম   (The Price of a Smell)  - a second story, same project
+# ============================================================
+
+TITLE: গন্ধের দাম | চতুর চাঁদুর আরেক গল্প | 3.6
+
+CHARACTERS:
+raja    | রাজা        | king     | voice=bn-IN-BashkarNeural rate=-10 pitch=-8 fx=-2
+halwai  | হালুইকর     | minister | voice=bn-BD-PradeepNeural rate=-2 pitch=-6 fx=-4 coat=214,110,40 trim=244,196,48 hat_main=214,110,40 hat_accent=244,196,48 build=1.2 face_w=150 nose=1.3
+gorib   | গরিব লোক    | minister | voice=bn-IN-BashkarNeural rate=2 pitch=4 fx=2 coat=176,168,146 trim=140,120,90 hat=topi beard=none build=0.85 skin=176,122,86 face_w=124 scale=0.68 shoes=90,60,42
+chandu  | চাঁদু       | jester   | voice=bn-BD-PradeepNeural rate=6 pitch=10 fx=3
+
+# ---------------- the bazaar ----------------
+SCENE market: halwai@0.30:right gorib@0.58:left
+> wait 0.5
+halwai (angry, point, to=gorib): ধরেছি! এই লোকটা সারা সকাল আমার দোকানের সামনে দাঁড়িয়ে মিষ্টির গন্ধ শুঁকেছে! || gorib:nervous
+gorib (scared, palm, to=halwai): ভাই, আমি তো কিছু খাইনি। মিষ্টি কেনার টাকাও আমার কাছে নেই।
+halwai (angry, fist, to=gorib): তাতে কী? গন্ধও আমার মিষ্টির অংশ! গন্ধের দাম দিতে হবে, নইলে রাজার কাছে নালিশ করব! || gorib:cower
+
+# ---------------- the court ----------------
+SCENE court: halwai@0.20:right gorib@0.40:right raja@0.74:left
+> wait 0.6
+halwai (angry, point, to=raja): মহারাজ, এই লোক আমার মিষ্টির গন্ধ চুরি করেছে। এর বিচার চাই! || gorib:nervous
+raja (thinking, open, to=halwai): হুম... এমন অদ্ভুত নালিশ তো আগে কখনও শুনিনি। এর বিচার কীভাবে হবে?
+> enter chandu from right to 0.57 happy 2.0
+chandu (happy, open, to=raja): মহারাজ, অনুমতি দিলে এই বিচারের ভার আমি নিতে পারি।
+raja (neutral, palm, to=chandu): বেশ, বলো চাঁদু। গরিব লোকটি গন্ধের দাম কী দেবে?
+chandu (confident, palm, to=gorib): ভাই, তোমার ঝুলিতে কয়টা টাকা আছে?
+gorib (nervous, shrug, to=chandu): মাত্র দুটি টাকা, হুজুর। সারাদিনের রোজগার।
+chandu (happy, open, to=gorib): দাও তো দেখি, টাকা দুটি। মিষ্টিওয়ালা ভাই, এবার ভালো করে কান পেতে শুনুন!
+> popup "ঝনঝন! ঝনঝন!" 1.8
+> act chandu wave 1.8 || halwai:surprised gorib:nervous
+chandu (confident, point, to=halwai): শুনলেন তো? গন্ধ ছিল বাতাসের, আর তার দাম মেটানো হল টাকার ঝনঝন শব্দে!
+halwai (surprised, fist, to=chandu): কিন্তু... এ তো টাকা নয়, কেবল শব্দ! || raja:smirk
+chandu (scheming, open, to=halwai): ঠিক বলেছেন! গন্ধও তো মিষ্টি নয়, কেবল গন্ধ। গন্ধের বদলে শব্দ, দুটোই সমান সমান! || halwai:guilty
+raja (happy, open, to=halwai): হা হা হা! চমৎকার বিচার! হালুইকর, গরিবকে ছেড়ে দাও, আর তাকে পেট ভরে মিষ্টিও খাওয়াও! || chandu:cheer gorib:cheer
+halwai (sad, salute, to=raja): আমারই ভুল মহারাজ। এসো ভাই, পেট ভরে মিষ্টি খাও। || gorib:happy
+gorib (happy, salute, to=chandu): ধন্যবাদ মহারাজ! ধন্যবাদ চাঁদুবাবু! || raja:laugh
+chandu (happy, chest, to=raja): মনে রাখবেন মহারাজ, লোভ করলে হারতে হয়, আর বুদ্ধি থাকলে জিততে হয়।
+> act chandu bow 1.8 || raja:laugh halwai:guilty gorib:cheer
+
+END: সমাপ্ত | গন্ধের দাম | 3

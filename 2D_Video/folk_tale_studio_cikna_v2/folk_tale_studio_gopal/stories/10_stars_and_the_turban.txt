@@ -1,0 +1,21 @@
+# ============================================================
+#  আকাশের তারা   (The Stars in the Sky)  - the royal court
+# ============================================================
+TITLE: আকাশের তারা | চিকনা ভাঁড়ের রাজসভার গল্প | 4.5
+
+CHARACTERS:
+raja        | রাজা কৃষ্ণচন্দ্র | krishnachandra | voice=bn-IN-BashkarNeural rate=-10 pitch=-8 fx=-2
+mantri      | মন্ত্রী           | mantri         | voice=bn-BD-PradeepNeural rate=-4 pitch=-4 fx=-3
+chikna      | চিকনা ভাঁড়      | chikna         | voice=bn-BD-PradeepNeural rate=6 pitch=10 fx=3
+
+SCENE rajshobha: mantri@0.18:right chikna@0.42:right raja@0.76:left
+raja (confident, open, to=chikna): চিকনা, আজ আমার প্রশ্ন। আকাশে ঠিক কয়টা তারা আছে? উত্তর ভুল হলে আজ ভাঁড়ামি বন্ধ! || mantri:smirk
+chikna (confident, chest, to=raja): মহারাজ, আকাশে তারা ঠিক ততটাই, যত প্যাঁচ মন্ত্রীমশাইয়ের পাগড়িতে। || mantri:surprised
+mantri (angry, point, to=chikna): বাজে কথা! পাগড়ির প্যাঁচ কেউ গোনে নাকি? || chikna:smirk
+chikna (smirk, open, to=mantri): তাহলে মন্ত্রীমশাই, পাগড়িটা একবার খুলে দিন। আমি এক এক করে গুনে দেব। || mantri:nervous
+mantri (scared, shrug, to=raja): মহারাজ... রাজসভায় পাগড়ি খোলা তো নিয়ম নয়! || raja:smirk
+raja (happy, open, to=mantri): হা হা হা! পাগড়ির প্যাঁচই যদি গোনা না যায়, তাহলে আকাশের তারা কে গুনবে? চিকনা, তোমার উত্তর একদম ঠিক! || mantri:guilty chikna:cheer
+chikna (happy, chest, to=raja): ধন্যবাদ মহারাজ। যা গোনা যায় না, তা নিয়ে ঝগড়া না করাই বুদ্ধিমানের কাজ! || raja:laugh
+> act chikna bow 1.6 || raja:laugh mantri:guilty
+
+END: সমাপ্ত | আকাশের তারা | 2.5

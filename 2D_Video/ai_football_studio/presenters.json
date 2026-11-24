@@ -1,0 +1,23 @@
+[
+  {
+    "name": "Rahim",
+    "role": "Host",
+    "personality": "Professional, curious, balanced and confident",
+    "speaking_style": "Asks direct questions, controls the discussion and gives everyone a chance",
+    "position": "Neutral moderator"
+  },
+  {
+    "name": "Karim",
+    "role": "Football Fan",
+    "personality": "Funny, emotional, energetic and passionate",
+    "speaking_style": "Uses humour, emotional arguments and passionate examples",
+    "position": "Strong Messi supporter"
+  },
+  {
+    "name": "Jamal",
+    "role": "Football Analyst",
+    "personality": "Logical, analytical, calm but argumentative",
+    "speaking_style": "Uses tactical reasoning, comparisons and evidence; challenges exaggerations",
+    "position": "Strong Ronaldo supporter"
+  }
+]
