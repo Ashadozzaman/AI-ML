@@ -1,0 +1,21 @@
+# ============================================================
+#  স্বপ্নের মোহর   (Money from a Dream)  - short, Reels style (about 40 s)
+# ============================================================
+TITLE: স্বপ্নের মোহর | চিকনা ভাঁড় ও গিন্নি | 4.5
+
+CHARACTERS:
+chikna      | চিকনা ভাঁড় | chikna | voice=bn-BD-PradeepNeural rate=6 pitch=10 fx=3
+ginni       | গিন্নি      | ginni  | voice=bn-BD-NabanitaNeural rate=4 pitch=4 fx=0
+
+SCENE garden_empty: ginni@0.30:right chikna@0.72:left
+> wait 0.4 || chikna:think
+ginni (angry, point, to=chikna): সারাদিন ঘুম আর ঘুম! সংসারে একটা টাকাও আনো না! || chikna:nervous
+chikna (happy, open, to=ginni): গিন্নি, ঘুমিয়েও আমি কাজ করি। আজ স্বপ্নে রাজামশাই আমাকে একশো মোহর দিয়েছেন! || ginni:surprised
+ginni (surprised, show_hands, to=chikna): একশো মোহর! কোথায়? কোথায় রেখেছ? দাও, শিগগির দাও! || chikna:smirk
+chikna (sad, shrug, to=ginni): আর বোলো না গিন্নি, মোহর গোনার আগেই তুমি ডেকে ঘুম ভাঙিয়ে দিলে, সব উড়ে গেল! || ginni:stomp
+ginni (thinking, open, to=chikna): ও, তাই নাকি? তাহলে আজ রাতে ভাত আমি স্বপ্নেই রাঁধব। তুমিও স্বপ্নেই খেয়ে নিয়ো! || chikna:nervous
+chikna (scared, palm, to=ginni): না না গিন্নি! স্বপ্নের ভাতে পেট ভরে না, তোমার হাতের ভাতটাই আসল! || ginni:laugh
+ginni (happy, point, to=chikna): তাহলে এবার ঘুম ছেড়ে বাজারের থলেটা হাতে নাও! || chikna:cheer
+> act chikna cheer 1.6 || ginni:laugh
+
+END: সমাপ্ত | স্বপ্নের মোহর | 2.5

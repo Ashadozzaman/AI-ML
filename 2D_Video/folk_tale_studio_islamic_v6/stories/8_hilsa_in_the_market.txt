@@ -1,0 +1,22 @@
+# ============================================================
+#  বাজারে ইলিশ   (Hilsa in the Market)  - short, Reels style (about 45 s)
+# ============================================================
+TITLE: বাজারে ইলিশ | চিকনা ভাঁড়ের হাসির গল্প | 4.5
+
+CHARACTERS:
+chikna      | চিকনা ভাঁড় | chikna   | voice=bn-BD-PradeepNeural rate=6 pitch=10 fx=3
+bikreta     | মাছওয়ালা   | minister | voice=bn-IN-BashkarNeural rate=2 pitch=-2 fx=-2 hat=topi beard=mustache coat=70,120,150 trim=240,240,230 hat_main=246,242,230
+
+SCENE market: chikna@0.30:right bikreta@0.72:left
+chikna (nervous, shrug, to=bikreta): ভাই, গিন্নি বলেছে ইলিশ আনতে। কিন্তু পকেটে আছে মাত্র একশো টাকা! || bikreta:smirk
+bikreta (confident, chest, to=chikna): একশো টাকায় ইলিশ? ভাই, এখানে ইলিশের দাম কেজি দুই হাজার!
+chikna (thinking, point, to=0.72): দাঁড়াও দাঁড়াও। ইলিশ আমার পুরনো বন্ধু। আগে তার কানে কানে দামটা জিজ্ঞেস করি। || bikreta:surprised
+> act chikna touch 1.8 || bikreta:surprised
+bikreta (surprised, open, to=chikna): মাছ আবার কথা বলে নাকি?
+chikna (confident, open, to=bikreta): বলে ভাই, বলে! ইলিশ বলল, সমুদ্রে সে মাত্র একশো টাকায় ঘুরে বেড়াত। বাজারে এসেই নাকি তার দাম কুড়ি গুণ! || bikreta:nervous
+chikna (smirk, point, to=bikreta): এখন বলো, মাঝখানের এই উনিশগুণ দাম কে খেয়ে ফেলল? || bikreta:guilty
+bikreta (happy, open, to=chikna): হা হা হা! বুদ্ধিতে তোমার সঙ্গে পারা যায় না। যাও, একশো টাকায় এই ছোট ইলিশটা নিয়ে যাও। || chikna:cheer
+chikna (happy, chest, to=bikreta): ধন্যবাদ ভাই! আমার ইলিশ-বন্ধু সমুদ্রে গিয়ে সবাইকে তোমার দোকানের নাম বলবে! || bikreta:laugh
+> act chikna bow 1.6 || bikreta:laugh
+
+END: সমাপ্ত | বাজারে ইলিশ | 2.5

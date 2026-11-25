@@ -1,0 +1,31 @@
+# সময় ও সুস্থতার মূল্য (Value of time and health) - about 1 min 30 s.   Hadith: Sahih Bukhari 6412
+THEME: islamic
+TITLE: সময় ও সুস্থতার মূল্য | ছোটদের জন্য ইসলামিক শিক্ষা | 2.6
+
+CHARACTERS:
+baba    | বাবা  | baba    | voice=bn-BD-PradeepNeural rate=-2
+ma      | মা    | ma      | voice=bn-BD-NabanitaNeural rate=-2
+student | রাকিব | student | voice=bn-BD-PradeepNeural rate=2 fx=1
+
+SCENE home_evening: student@0.60:left ma@0.25:right
+ma (thinking, palm, to=student): রাকিব, কাল তোমার পরীক্ষা না? বই খুলেছ কি?
+student (happy, shrug, to=ma): আম্মু, একটা গেম শেষ করেই পড়তে বসব। মাত্র পাঁচ মিনিট! || ma:think
+> wait 1.0
+> dark 0.6 1.2 "দুই ঘণ্টা পর..."
+> light 1.0
+ma (angry, point, to=student): পাঁচ মিনিট? দুই ঘণ্টা পার হয়ে গেছে! ঘড়ি দেখো!
+student (surprised, open, to=ma): ওহ! সময় যে এত দ্রুত চলে যায়, বুঝতেই পারিনি! || ma:shock
+> enter baba from right to 0.88 neutral 2
+baba (surprised, palm, to=student): আসসালামু আলাইকুম। রাকিব, এখনো বই বন্ধ কেন? কাল পরীক্ষা, আর তুমি হাসছ!
+student (sad, chest, to=baba): আব্বু, আমি ভুল করেছি। সময়টা নষ্ট করে ফেলেছি। এখন তো আর সময়ই নেই।
+baba (happy, chest, to=student): চিন্তা কোরো না, এখনো সময় আছে। নবীজি সাল্লাল্লাহু আলাইহি ওয়াসাল্লাম বলেছেন:
+> hadith "দুটি নেয়ামতের ব্যাপারে অনেক মানুষ ক্ষতিগ্রস্ত: সুস্থতা ও অবসর সময়।" "সহীহ বুখারী ৬৪১২"
+baba (happy, palm, to=student): আল্লাহ তোমাকে সুস্থতা দিয়েছেন, অবসরও দিয়েছেন। এই দুটো সুযোগ কাজে লাগাতে হবে।
+> hadith off
+student (happy, chest, to=baba): আব্বু, আমি এখন থেকেই পড়তে বসছি। গেমটা কালকের পরীক্ষার পর খেলব, ইনশাআল্লাহ।
+> tip "সুস্থতা ও অবসর, দুটোই আল্লাহর নেয়ামত। সময় নষ্ট কোরো না।"
+ma (happy, open, to=student): মাশাআল্লাহ! আমি তোমার জন্য গরম চা বানিয়ে আনি।
+baba (happy, show_hands, to=ma): আর আমি তাকে জেগে থাকতে সাহায্য করব। অর্থাৎ, আমিও চা খাব! || ma:laugh
+> tip off
+
+END: আল্লাহ হাফেজ | ভালো লাগলে শেয়ার করুন | 3

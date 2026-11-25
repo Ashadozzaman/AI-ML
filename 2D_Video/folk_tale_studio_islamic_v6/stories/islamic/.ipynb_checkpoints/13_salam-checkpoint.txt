@@ -1,0 +1,29 @@
+# সালাম ছড়িয়ে দাও (Spreading salam) - about 1 min 20 s.   Hadith: Sahih Muslim 54
+THEME: islamic
+TITLE: সালাম ছড়িয়ে দাও | ছোটদের জন্য ইসলামিক শিক্ষা | 2.6
+
+CHARACTERS:
+hujur   | হুজুর | hujur   | voice=bn-IN-BashkarNeural rate=-8
+student | রাকিব | student | voice=bn-BD-PradeepNeural rate=2 fx=1
+child   | মাহির | child   | voice=bn-BD-PradeepNeural rate=4 fx=3
+
+SCENE masjid_yard: student@0.28:right child@0.50:left
+> enter hujur from right to 0.80 happy 2
+hujur (happy, open, to=student): আসসালামু আলাইকুম, রাকিব! কেমন আছ, বাবা?
+student (happy, wave, to=hujur): হ্যালো হুজুর! আমি ভালো আছি, টাটা... আসলে আজ একটু তাড়া আছে!
+child (happy, wave, to=hujur): হাই হুজুর! হাই হুজুর! || hujur:laugh
+hujur (happy, palm, to=student): হা হা! হ্যালো আর হাই-ও ভালো, কিন্তু সালামের সওয়াব আলাদা। এটা তো দোয়াও।
+hujur (happy, chest, to=child): নবীজি সাল্লাল্লাহু আলাইহি ওয়াসাল্লাম বলেছেন:
+> hadith "পরস্পরকে ভালোবাসলে তোমরা ঈমানদার হবে। আমি কি এমন কাজের কথা বলব, যাতে ভালোবাসা বাড়ে? নিজেদের মধ্যে সালাম ছড়িয়ে দাও।" "সহীহ মুসলিম ৫৪ (ভাবার্থ)"
+hujur (happy, palm, to=child): সালাম মানে, তোমার ওপর শান্তি বর্ষিত হোক। কত সুন্দর একটা দোয়া!
+> hadith off
+child (thinking, chest, to=hujur): তাহলে আমি যতজনকে সালাম দেব, ততজনের জন্য দোয়া করা হবে?
+hujur (happy, open, to=child): মাশাআল্লাহ! ঠিক ধরেছ। আর উত্তর দেওয়ার সময় বলতে হয়, ওয়ালাইকুমুস সালাম।
+> tip "সালাম দাও। সালামের উত্তর দাও। ভালোবাসা বাড়বে।"
+student (happy, chest, to=hujur): আসসালামু আলাইকুম হুজুর! আমি আবার ঠিকভাবে বলছি।
+hujur (happy, show_hands, to=student): ওয়ালাইকুমুস সালাম ওয়া রাহমাতুল্লাহ। এবার ঠিক হয়েছে।
+child (happy, raise, to=hujur): আসসালামু আলাইকুম, গাছ! আসসালামু আলাইকুম, মসজিদ! || student:laugh
+hujur (happy, palm, to=child): বাবা, মানুষকে সালাম দাও। গাছ তো উত্তর দেবে না! || student:laugh
+> tip off
+
+END: আল্লাহ হাফেজ | ভালো লাগলে শেয়ার করুন | 3

@@ -1,0 +1,30 @@
+# পরিচ্ছন্নতা (Cleanliness) - about 1 min 15 s.   Hadith: Sahih Muslim 223
+THEME: islamic
+TITLE: পরিচ্ছন্নতা ঈমানের অঙ্গ | ছোটদের জন্য ইসলামিক শিক্ষা | 2.6
+
+CHARACTERS:
+baba   | বাবা    | baba  | voice=bn-BD-PradeepNeural rate=-2
+child  | মাহির   | child | voice=bn-BD-PradeepNeural rate=4 fx=3
+jannat | জান্নাত | girl  | voice=bn-IN-TanishaaNeural rate=4
+
+SCENE home: baba@0.20:right jannat@0.80:left
+> enter child from right to 0.58 happy 2
+child (happy, show_hands, to=baba): আব্বু, আজ দারুণ ফুটবল খেলেছি! দেখো, জামা-জুতা সব কাদায় ভর্তি! || jannat:shock
+jannat (angry, point, to=child): ভাইয়া, দূরে যাও! আমার পরিষ্কার মেঝেতে কাদা ফেলছ! || child:nervous
+baba (surprised, palm, to=child): আগে হাত-পা ধুয়ে, জামা বদলে এসো, মাহির।
+child (sad, shrug, to=baba): আব্বু, আমি তো খুব ক্লান্ত। কাল করব, ইনশাআল্লাহ।
+baba (happy, chest, to=child): ক্লান্ত তো আমরা সবাই হই। কিন্তু নবীজি সাল্লাল্লাহু আলাইহি ওয়াসাল্লাম পরিচ্ছন্নতাকে খুব গুরুত্ব দিয়েছেন।
+> hadith "পবিত্রতা ঈমানের অর্ধেক।" "সহীহ মুসলিম ২২৩"
+baba (happy, palm, to=child): নামাজের জন্য অজু লাগে, পরিষ্কার কাপড় লাগে। আর সুন্দর করে দাঁত মাজাও পরিচ্ছন্নতার অংশ।
+> hadith off
+child (thinking, chest, to=baba): তাহলে পরিচ্ছন্ন থাকলে আল্লাহ আমার ওপর খুশি হবেন?
+baba (happy, open, to=child): ইনশাআল্লাহ। আর শরীর ভালো থাকে, মন ভালো থাকে, মানুষও তোমার কাছে বসতে ভালোবাসে।
+> tip "হাত ধোও, দাঁত মাজো, পরিষ্কার পোশাক পরো।"
+> exit child to right 1.8
+> wait 1.2
+> enter child from right to 0.58 happy 2
+jannat (surprised, open, to=child): বাহ ভাইয়া! এবার তো সাবানের গন্ধ আসছে! || baba:laugh
+child (happy, chest, to=jannat): পরিষ্কার হতে গিয়ে আজ পুরো সাবানটাই শেষ! || jannat:laugh
+> tip off
+
+END: আল্লাহ হাফেজ | ভালো লাগলে শেয়ার করুন | 3

@@ -1,0 +1,27 @@
+# বড়দের সম্মান, ছোটদের স্নেহ (Respect elders, mercy to the young) - about 1 min 20 s.   Hadith: Jami at-Tirmidhi 1919
+THEME: islamic
+TITLE: বড়দের সম্মান, ছোটদের স্নেহ | ছোটদের জন্য ইসলামিক শিক্ষা | 2.6
+
+CHARACTERS:
+hujur   | হুজুর | hujur   | voice=bn-IN-BashkarNeural rate=-8
+student | রাকিব | student | voice=bn-BD-PradeepNeural rate=2 fx=1
+child   | মাহির | child   | voice=bn-BD-PradeepNeural rate=4 fx=3
+
+SCENE masjid_yard: hujur@0.30:right student@0.58:left child@0.82:left
+hujur (sad, open, to=student): রাকিব, বাবা, বইয়ের এই বস্তাটা একটু ধরবে? আমার কোমরটা আজ খুব ব্যথা করছে।
+student (nervous, shrug, to=hujur): ইয়ে... হুজুর, আমার তো আজ তাড়া আছে। আমি এখনই ফোনে একটা জরুরি... ম্যাসেজ দেখব।
+child (happy, raise, to=hujur): হুজুর, আমি ধরছি! আমি ছোট, কিন্তু শক্তি আছে! || student:guilty
+> act child cheer 1.4
+hujur (happy, palm, to=child): মাশাআল্লাহ মাহির! বস্তাটা আস্তে নাও, বাবা, পড়ে যাবে।
+student (sad, chest, to=hujur): হুজুর, আমি লজ্জিত। ছোট একটা ছেলে যা পারল, আমি বড় হয়েও তা করলাম না।
+hujur (happy, chest, to=student): লজ্জা পাওয়া ভালো লক্ষণ। নবীজি সাল্লাল্লাহু আলাইহি ওয়াসাল্লাম বলেছেন:
+> hadith "যে আমাদের ছোটদের স্নেহ করে না এবং বড়দের সম্মান করে না, সে আমাদের দলভুক্ত নয়।" "জামে তিরমিযী ১৯১৯"
+hujur (happy, palm, to=student): মানে বড়দের সম্মান করতে হবে, আবার ছোটদের সঙ্গেও কোমল আচরণ করতে হবে।
+> hadith off
+student (happy, chest, to=hujur): হুজুর, আমি আজ থেকে বড়দের সাহায্য করব। আর মাহিরকে একটা আইসক্রিমও কিনে দেব!
+> tip "বড়দের সম্মান করো। ছোটদের স্নেহ করো।"
+child (happy, show_hands, to=student): আইসক্রিম! ভাইয়া, আপনি তো সেরা ভাইয়া! || hujur:laugh
+hujur (happy, open, to=student): আলহামদুলিল্লাহ। এখন বস্তাটা তুমি ধরো, মাহির ধরেছে দেখে আমি ভাবছিলাম, বস্তাটাই ওকে নিয়ে যাবে!
+> tip off
+
+END: আল্লাহ হাফেজ | ভালো লাগলে শেয়ার করুন | 3

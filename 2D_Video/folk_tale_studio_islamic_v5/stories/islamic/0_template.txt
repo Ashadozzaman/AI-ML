@@ -1,0 +1,35 @@
+# ============================================================
+#  TEMPLATE for a 1-2 minute Islamic-content video.  Copy this file, rename it, replace the Bangla.
+#  Full cheat sheet: SYNTAX.md  (section "Islamic videos")
+#
+#  Length guide:  about 160-200 spoken words = about 1.5 minutes.
+#  Rule of thumb: problem (3-4 lines) -> hujur / baba / ma explains with ONE hadith (3-4 lines) -> change of behaviour (3-4 lines).
+#  Always write the source of a hadith (book + number) on the card, and double-check it with a trusted alim or sunnah.com / hadithbd.
+# ============================================================
+THEME: islamic
+TITLE: আপনার ভিডিওর নাম | ছোটদের জন্য ইসলামিক শিক্ষা | 2.6
+
+CHARACTERS:
+# id    | name on screen | look    | voice settings
+hujur   | হুজুর           | hujur   | voice=bn-IN-BashkarNeural rate=-8
+baba    | বাবা            | baba    | voice=bn-BD-PradeepNeural rate=-2
+ma      | মা              | ma      | voice=bn-BD-NabanitaNeural rate=-2
+child   | মাহির           | child   | voice=bn-BD-PradeepNeural rate=4 fx=3
+student | রাকিব           | student | voice=bn-BD-PradeepNeural rate=2 fx=1
+# girl look:  jannat | জান্নাত | girl | voice=bn-IN-TanishaaNeural rate=4
+# change a colour:  ...| student | voice=... coat=214,110,70
+
+# backgrounds: masjid  masjid_evening  masjid_yard  masjid_yard_evening  home  home_evening  classroom
+SCENE home: ma@0.25:right child@0.70:left
+ma (surprised, raise, to=child): এখানে সমস্যাটা শুরু হয়। || child:nervous
+child (nervous, shrug, to=ma): এখানে ছেলে বা মেয়ে নিজের কথা বলে।
+> enter baba from right to 0.85 happy 2
+baba (happy, chest, to=child): নবীজি সাল্লাল্লাহু আলাইহি ওয়াসাল্লাম বলেছেন:
+> hadith "এখানে হাদীসের ভাবার্থ লিখুন।" "সহীহ বুখারী ০০০০ (বই ও নম্বর)"
+baba (happy, palm, to=child): এখানে হাদীসটি সহজ ভাষায় বুঝিয়ে বলুন।
+> hadith off
+> tip "আজকের টিপস, এক লাইনে।"
+child (happy, chest, to=baba): ইনশাআল্লাহ, আমি এখন থেকে এটা মেনে চলব।
+> tip off
+
+END: আল্লাহ হাফেজ | ভালো লাগলে শেয়ার করুন | 3

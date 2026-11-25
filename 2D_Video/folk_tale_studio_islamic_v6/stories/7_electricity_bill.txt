@@ -1,0 +1,25 @@
+# ============================================================
+#  বিদ্যুৎ বিলের ঝামেলা   (The Electricity Bill)  - short, Reels style (about 45 s)
+# ============================================================
+TITLE: বিদ্যুৎ বিলের ঝামেলা | চিকনা ভাঁড় ও গিন্নি | 4.5
+
+CHARACTERS:
+chikna      | চিকনা ভাঁড় | chikna | voice=bn-BD-PradeepNeural rate=6 pitch=10 fx=3
+ginni       | গিন্নি      | ginni  | voice=bn-BD-NabanitaNeural rate=4 pitch=4 fx=0
+
+SCENE garden_empty: ginni@0.32:right chikna@0.70:left
+ginni (angry, fist, to=chikna): এই দেখো, বিদ্যুৎ বিল এসেছে পাঁচ হাজার টাকা! সারারাত কী এত পাখা চালাও? || chikna:surprised
+chikna (surprised, open, to=ginni): আমি? গিন্নি, পাখা তো তুমিই চালাও, আর সারারাত টিভিতে নাটক দেখো! || ginni:nervous
+ginni (angry, point, to=chikna): আর তুমি? সারারাত মোবাইলে ভিডিও দেখে হা হা করে হাসো! || chikna:cower
+chikna (thinking, chest, to=ginni): ঠিক আছে, আজ থেকে সন্ধ্যা হলেই সব আলো নিভিয়ে দেব। || ginni:think
+> dark 0.93 0.9 "সন্ধ্যা নামল, সব আলো বন্ধ…"
+> wait 1.4
+> light 0.9
+chikna (happy, open, to=ginni): দেখলে গিন্নি, কী শান্তি! আলো নিভলে বিলও কমে, আর কথা না দেখা গেলে ঝগড়াও কমে! || ginni:laugh
+ginni (happy, show_hands, to=chikna): হয়েছে হয়েছে, বাহাদুরি থামাও। রান্নাঘরের আলো কিন্তু আমি জ্বালাবই।
+chikna (happy, chest, to=ginni): জ্বালাও জ্বালাও, শুধু পরের মাসের বিলটা তুমিই দিয়ো! || ginni:stomp
+ginni (angry, point, to=chikna): কী! বিল আমি দেব?
+> popup "দৌড়!" 1.4
+> exit chikna to right 1.6 || ginni:stomp
+
+END: সমাপ্ত | বিদ্যুৎ বিলের ঝামেলা | 2.5

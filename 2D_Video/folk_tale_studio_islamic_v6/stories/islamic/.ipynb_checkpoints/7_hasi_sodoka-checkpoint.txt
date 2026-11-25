@@ -1,0 +1,28 @@
+# হাসিমুখে থাকা সদকা (Smile is charity) - about 1 min 15 s.   Hadith: Jami at-Tirmidhi 1956
+THEME: islamic
+TITLE: হাসিমুখে থাকাও সদকা | ছোটদের জন্য ইসলামিক গল্প | 2.6
+
+CHARACTERS:
+ma    | মা    | ma    | voice=bn-BD-NabanitaNeural rate=-2
+baba  | বাবা  | baba  | voice=bn-BD-PradeepNeural rate=-2
+child | মাহির | child | voice=bn-BD-PradeepNeural rate=4 fx=3
+
+SCENE home_evening: ma@0.25:right child@0.62:left
+child (sad, chest, to=ma): আম্মু, আব্বু রোজ অফিস থেকে এসে গোমড়া মুখ করে থাকেন। আমার একটু ভয় লাগে।
+ma (thinking, palm, to=child): আব্বুর কাজের চাপ অনেক, বাবা। চলো, আজ আমরা আব্বুকে একটু খুশি করি।
+child (happy, raise, to=ma): আমি আব্বুর জন্য একটা ছবি এঁকেছি! এটা দেখলে আব্বু নিশ্চয়ই হাসবেন! || ma:laugh
+> enter baba from right to 0.88 sad 2.5
+baba (sad, shrug, to=ma): আসসালামু আলাইকুম। উফ, আজ রাস্তায় জ্যাম, অফিসে ঝামেলা। মাথাটা ধরে গেছে।
+child (happy, show_hands, to=baba): আব্বু, এই দেখো! এই ছবিতে তুমি আর আমি। আর তুমি হাসছ, কারণ আমি আঁকতে পারি না! || ma:laugh
+baba (surprised, open, to=child): হা হা হা! এ তো আমার চেয়েও মোটা! এমন ছবি দেখলে কেউ না হেসে পারে?
+ma (happy, chest, to=baba): আপনি জানেন, নবীজি সাল্লাল্লাহু আলাইহি ওয়াসাল্লাম বলেছেন:
+> hadith "তোমার ভাইয়ের সামনে হাসিমুখে থাকাও একটি সদকা।" "জামে তিরমিযী ১৯৫৬"
+ma (happy, palm, to=baba): ঘরের মানুষের সামনে হাসিমুখে থাকলেও সদকার সওয়াব পাওয়া যায়।
+baba (sad, chest, to=ma): আলহামদুলিল্লাহ। আমি বাইরের সবাইকে হাসি দিই, আর ঘরের মানুষদের দিই গোমড়া মুখ। ভুল করেছি।
+> hadith off
+> tip "হাসিমুখে থাকো। এটাও সদকা।"
+child (happy, open, to=baba): আব্বু, ছবিটা আমি ফ্রিজে লাগিয়ে দেব! || baba:laugh
+baba (happy, chest, to=child): অবশ্যই! আর কাল থেকে আব্বু হাসিমুখেই ঘরে ঢুকবে, ইনশাআল্লাহ।
+> tip off
+
+END: আল্লাহ হাফেজ | ভালো লাগলে শেয়ার করুন | 3

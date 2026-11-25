@@ -1,0 +1,32 @@
+# ============================================================
+#  ভালো কথা বলো, নইলে চুপ থাকো   (Good speech / no backbiting)  - about 1 min 30 s
+#  Hadith: Sahih Bukhari 6018, Sahih Muslim 47.  Quran 49:12 is mentioned in speech only.
+# ============================================================
+THEME: islamic
+TITLE: ভালো কথা বলো, নইলে চুপ থাকো | ছোটদের জন্য ইসলামিক শিক্ষা | 2.6
+
+CHARACTERS:
+rakib | রাকিব | student | voice=bn-BD-PradeepNeural rate=2 fx=1
+sakib | সাকিব | student | voice=bn-IN-BashkarNeural rate=4 fx=1 coat=214,110,70
+hujur | হুজুর | hujur   | voice=bn-IN-BashkarNeural rate=-8
+
+SCENE classroom: rakib@0.25:right sakib@0.50:left
+rakib (smirk, open, to=sakib): শুনেছিস? রাহাত নাকি পরীক্ষায় ফেল করেছে! আর ওর জুতাটা দেখেছিস? কত পুরনো! || sakib:laugh
+sakib (smirk, show_hands, to=rakib): ঠিক বলেছিস! ও তো পড়াশোনায় একদমই... হা হা!
+> enter hujur from right to 0.82 happy 2
+hujur (neutral, palm, to=rakib): আসসালামু আলাইকুম। কার কথা বলছিলে, রাকিব? || rakib:nervous sakib:nervous
+rakib (nervous, shrug, to=hujur): ওয়ালাইকুমুস সালাম হুজুর। কারো না, এমনি গল্প করছিলাম।
+hujur (happy, chest, to=rakib): আমি শুনেছি বাবা। বসো, একটা হাদীস শোনো। নবীজি সাল্লাল্লাহু আলাইহি ওয়াসাল্লাম বলেছেন:
+> hadith "যে আল্লাহ ও আখিরাত দিবসে বিশ্বাস রাখে, সে যেন ভালো কথা বলে, নইলে চুপ থাকে।" "সহীহ বুখারী ৬০১৮; সহীহ মুসলিম ৪৭"
+hujur (happy, palm, to=sakib): কারো অনুপস্থিতিতে তার দোষ বলাকে গীবত বলে। কুরআনে সূরা হুজুরাতের বারো নম্বর আয়াতে আল্লাহ গীবতকে মৃত ভাইয়ের গোশত খাওয়ার সাথে তুলনা করেছেন।
+> hadith off
+sakib (sad, chest, to=hujur): ওহ... আমরা তো বুঝতেই পারিনি এটা এত বড় গুনাহ। || rakib:cower
+rakib (sad, chest, to=hujur): আমরা ভুল করেছি হুজুর। আল্লাহ আমাদের মাফ করুন।
+hujur (happy, open, to=rakib): আলহামদুলিল্লাহ, ভুল বুঝতে পারাই ভালো লক্ষণ। রাহাত ফেল করেছে? তাহলে তাকে নিয়ে হাসি-ঠাট্টা নয়, তাকে সাহায্য করো।
+> tip "ভালো কথা বলো, নইলে চুপ থাকো। কারো আড়ালে দোষ বলো না।"
+rakib (happy, chest, to=sakib): চল সাকিব, আজই আমরা রাহাতকে অঙ্কটা বুঝিয়ে দিই। || sakib:cheer
+sakib (happy, raise, to=rakib): আর ওর জুতার কথা? আমি ওকে আমার পুরনো জুতাটাই দিয়ে দেব! || hujur:laugh
+hujur (happy, show_hands, to=sakib): বাহ! দেখলে তো, ভালো কথার পরে ভালো কাজও চলে আসে।
+> tip off
+
+END: আল্লাহ হাফেজ | ভালো লাগলে শেয়ার করুন | 3

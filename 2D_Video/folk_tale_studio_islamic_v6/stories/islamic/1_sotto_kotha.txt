@@ -1,0 +1,35 @@
+# ============================================================
+#  সত্য কথা বলার সওয়াব   (Honesty)  - about 1 min 30 s
+#  Hadith: Sahih Bukhari 6094, Sahih Muslim 2607
+# ============================================================
+THEME: islamic
+TITLE: সত্য কথা বলার সওয়াব | ছোটদের জন্য ইসলামিক গল্প | 2.6
+
+CHARACTERS:
+ma    | মা    | ma    | voice=bn-BD-NabanitaNeural rate=-2
+baba  | বাবা  | baba  | voice=bn-BD-PradeepNeural rate=-2
+child | মাহির | child | voice=bn-BD-PradeepNeural rate=4 fx=3
+
+SCENE home: ma@0.22:right child@0.62:left
+> prop glass_pieces at 0.42 scale 0.8
+ma (surprised, raise, to=child): মাহির! আম্মুর প্রিয় কাচের গ্লাসটা কে ভেঙেছে? || child:nervous
+child (nervous, shrug, to=ma): আমি না আম্মু! বিড়ালটা লাফ দিয়ে ভেঙে ফেলেছে! || ma:think
+ma (thinking, palm, to=child): বিড়াল? কিন্তু বিড়ালটা তো সারাদিন বাইরেই ছিল, বাবা।
+child (sad, chest, to=ma): আসলে... আমিই ভেঙেছি। ভয়ে মিথ্যা বলেছি। আম্মু, আমাকে মাফ করে দাও।
+ma (happy, open, to=child): সত্যটা বলে দিয়েছ, এতেই আমি খুশি। ভুল সবারই হয়, কিন্তু মিথ্যা বললে ভুলটা দ্বিগুণ হয়ে যায়।
+> enter baba from right to 0.85 happy 2
+baba (surprised, open, to=ma): আসসালামু আলাইকুম! কী হয়েছে এখানে? গ্লাস ভেঙেছে নাকি?
+child (sad, chest, to=baba): আব্বু, আমি ভেঙেছি। প্রথমে মিথ্যা বলেছিলাম, তারপর সত্যিটা বলে দিয়েছি।
+baba (happy, chest, to=child): আলহামদুলিল্লাহ! শোনো মাহির, নবীজি সাল্লাল্লাহু আলাইহি ওয়াসাল্লাম বলেছেন, সত্যকে আঁকড়ে ধরো।
+> hadith "তোমরা সত্যকে আঁকড়ে ধরো। কারণ সত্য নেকির পথ দেখায়, আর নেকি জান্নাতের পথে নিয়ে যায়।" "সহীহ বুখারী ৬০৯৪; সহীহ মুসলিম ২৬০৭ (ভাবার্থ)"
+baba (happy, palm, to=child): সত্য নেকির পথ দেখায়, আর নেকি জান্নাতের পথে নিয়ে যায়। আর মিথ্যা থেকে দূরে থাকো, কারণ মিথ্যা গুনাহর দিকে নিয়ে যায়।
+> hadith off
+> tip "ভুল করলে সত্যি বলো। মিথ্যা ভুলকে আরও বড় করে।"
+ma (happy, chest, to=child): মনে রেখো মাহির, ভুল করলে সত্যি বলাই সবচেয়ে ভালো।
+child (happy, chest, to=ma): জি আম্মু! আমি আর কখনো মিথ্যা বলব না, ইনশাআল্লাহ।
+> tip off
+ma (smirk, point, to=child): খুব ভালো! তাহলে ভাঙা কাচগুলো এখন তুমিই সাবধানে পরিষ্কার করবে, কেমন? || child:nervous
+child (nervous, open, to=ma): সত্যি বলার এই শাস্তি? আচ্ছা আম্মু, করছি... || baba:laugh
+> prop glass_pieces off
+
+END: আল্লাহ হাফেজ | ভালো লাগলে শেয়ার করুন | 3

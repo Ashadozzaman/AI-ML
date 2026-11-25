@@ -1,0 +1,26 @@
+# নিয়তের গুরুত্ব (Intention) - about 1 min 20 s.   Hadith: Sahih Bukhari 1, Sahih Muslim 1907
+THEME: islamic
+TITLE: নিয়ত ঠিক রাখো | ছোটদের জন্য ইসলামিক শিক্ষা | 2.6
+
+CHARACTERS:
+hujur   | হুজুর | hujur   | voice=bn-IN-BashkarNeural rate=-8
+student | রাকিব | student | voice=bn-BD-PradeepNeural rate=2 fx=1
+
+SCENE classroom: hujur@0.28:right student@0.68:left
+student (happy, chest, to=hujur): হুজুর, এই বছর আমি রাত জেগে পড়ছি। আমি ক্লাসে প্রথম হব, তারপর সবাই আমার প্রশংসা করবে!
+hujur (thinking, palm, to=student): পড়াশোনা করছ, এটা খুব ভালো। কিন্তু বলো তো, কেন প্রথম হতে চাও?
+student (confident, show_hands, to=hujur): যাতে সবাই বলে, রাকিব সবার সেরা! আর আমার বন্ধু সাকিব আমার কাছে হেরে যাবে!
+hujur (happy, chest, to=student): রাকিব, একটা কথা মন দিয়ে শোনো। নবীজি সাল্লাল্লাহু আলাইহি ওয়াসাল্লাম বলেছেন:
+> hadith "সব কাজ নিয়তের ওপর নির্ভরশীল। প্রত্যেক মানুষ তা-ই পাবে, যার নিয়ত সে করেছে।" "সহীহ বুখারী ১; সহীহ মুসলিম ১৯০৭"
+hujur (happy, palm, to=student): একই পড়াশোনা, দুটি নিয়তে দুই রকম ফল হয়। লোকদেখানো নিয়তে শুধু নাম পাওয়া যায়, আর আল্লাহর জন্য করলে সওয়াবও পাওয়া যায়।
+student (thinking, chest, to=hujur): তাহলে আমি কীভাবে নিয়ত বদলাব?
+> hadith off
+hujur (happy, raise, to=student): মনে মনে বলো: আমি জ্ঞান শিখব যাতে আল্লাহকে চিনি, মা-বাবাকে খুশি রাখি, আর মানুষের উপকার করতে পারি।
+student (happy, chest, to=hujur): আলহামদুলিল্লাহ। এখন পড়তে আমার আরও ভালো লাগছে।
+> tip "ভালো কাজ করো, আর নিয়ত করো আল্লাহর জন্য।"
+hujur (happy, open, to=student): আর যদি প্রথমও হও, তবু বিনয়ী থেকো। অহংকার ভালো নয়।
+student (happy, show_hands, to=hujur): ইনশাআল্লাহ হুজুর! আর সাকিবকেও আমি পড়া বুঝিয়ে দেব। সে আমার কাছে হারলে অবশ্য একটু মজা আছে! || hujur:laugh
+hujur (surprised, raise, to=student): রাকিব! এই কথাটা আবার নিয়তের ভেতরে ঢোকাও না!
+> tip off
+
+END: আল্লাহ হাফেজ | ভালো লাগলে শেয়ার করুন | 3

@@ -1,0 +1,29 @@
+# কৃতজ্ঞতা (Thanking people) - about 1 min 20 s.   Hadith: Sunan Abi Dawud 4811, Jami at-Tirmidhi 1954
+THEME: islamic
+TITLE: মানুষের কৃতজ্ঞতা, আল্লাহর কৃতজ্ঞতা | ছোটদের জন্য ইসলামিক শিক্ষা | 2.6
+
+CHARACTERS:
+baba    | বাবা  | baba    | voice=bn-BD-PradeepNeural rate=-2
+student | রাকিব | student | voice=bn-BD-PradeepNeural rate=2 fx=1
+child   | মাহির | child   | voice=bn-BD-PradeepNeural rate=4 fx=3
+
+SCENE home: baba@0.25:right child@0.68:left
+> enter student from right to 0.90 happy 2
+student (happy, show_hands, to=child): মাহির, এই নাও! তোমার জন্য একটা নতুন পেন্সিল বক্স এনেছি।
+child (happy, open, to=student): আরে! এটা তো আমি কতদিন ধরে চাচ্ছিলাম! > act child cheer 1.0
+> wait 0.8
+student (surprised, palm, to=child): কিছু বললে না? আমি তো ভেবেছিলাম, তুমি অন্তত ধন্যবাদ বলবে।
+child (nervous, shrug, to=student): ধন্যবাদ আবার কী! তুমি তো এমনিই দিয়েছ, ভাইয়া। || baba:think
+baba (thinking, palm, to=child): মাহির, এদিকে এসো। রাকিব তোমার জন্য সময় নষ্ট করে দোকানে গিয়েছে। তাকে কৃতজ্ঞতা জানাতে হবে।
+baba (happy, chest, to=child): নবীজি সাল্লাল্লাহু আলাইহি ওয়াসাল্লাম বলেছেন:
+> hadith "যে মানুষের কৃতজ্ঞতা প্রকাশ করে না, সে আল্লাহরও কৃতজ্ঞতা প্রকাশ করে না।" "সুনানে আবু দাউদ ৪৮১১; জামে তিরমিযী ১৯৫৪"
+baba (happy, palm, to=child): তাই কেউ উপকার করলে মন থেকে ধন্যবাদ বলো। সবচেয়ে সুন্দর বলা হলো, জাযাকাল্লাহু খাইরান।
+> hadith off
+child (happy, chest, to=student): জাযাকাল্লাহু খাইরান, ভাইয়া! আমি খুব খুশি হয়েছি, আর সারা বছর যত্ন করে রাখব।
+student (happy, open, to=child): ওয়া আইয়াকা, মাহির। আল্লাহ তোমাকে ভালো রাখুন।
+> tip "উপকার পেলে বলো, জাযাকাল্লাহু খাইরান।"
+child (happy, raise, to=baba): আব্বু, আমি আজ থেকে সবাইকে ধন্যবাদ বলব! আম্মুকে, আপনাকে, এমনকি বিড়ালটাকেও!
+baba (happy, show_hands, to=child): বিড়ালটাকে অবশ্য বলার দরকার নেই, ও দুধ চুরি করে খায়! || student:laugh
+> tip off
+
+END: আল্লাহ হাফেজ | ভালো লাগলে শেয়ার করুন | 3

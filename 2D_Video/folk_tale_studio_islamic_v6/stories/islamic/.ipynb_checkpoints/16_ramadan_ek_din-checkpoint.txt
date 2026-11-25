@@ -1,0 +1,96 @@
+# ============================================================
+#  রমজানের এক দিন  (A day in Ramadan) - about 5 minutes
+#  Five hadith cards: Bukhari 1923/Muslim 1095 (sahur) | Bukhari 1903 (false speech) | Bukhari 1904/Muslim 1151 (if someone fights you)
+#                     Bukhari 1957/Muslim 1098 (hasten iftar) | Tirmidhi 807 (feeding a fasting person)  + Bukhari 38/Muslim 760 (closing)
+#  Scenes: sahur (home_evening) -> after Zuhr (masjid_yard) -> iftar (home_evening + food) -> taraweeh (masjid_evening)
+# ============================================================
+THEME: islamic
+TITLE: রমজানের এক দিন | ছোটদের জন্য ইসলামিক গল্প | 2.6
+
+CHARACTERS:
+hujur   | হুজুর   | hujur   | voice=bn-IN-BashkarNeural rate=-8
+baba    | বাবা    | baba    | voice=bn-BD-PradeepNeural rate=-2
+ma      | মা      | ma      | voice=bn-BD-NabanitaNeural rate=-2
+child   | মাহির   | child   | voice=bn-BD-PradeepNeural rate=4 fx=3
+jannat  | জান্নাত | girl    | voice=bn-IN-TanishaaNeural rate=4
+student | রাকিব   | student | voice=bn-BD-PradeepNeural rate=2 fx=1
+
+# ---------------- 1. সাহরি ----------------
+SCENE home_evening: ma@0.22:right baba@0.42:right child@0.74:left
+ma (happy, open, to=child): মাহির, ওঠো বাবা! সাহরির সময় হয়ে গেছে। আজ তোমার জীবনের প্রথম পুরো রোজা!
+child (sad, shrug, to=ma): আম্মু, আমার চোখ খুলছে না। রোজা কি আমি রাখতে পারব?
+baba (happy, chest, to=child): ইনশাআল্লাহ পারবে। কিন্তু আগে সাহরি খেতে হবে। নবীজি সাল্লাল্লাহু আলাইহি ওয়াসাল্লাম বলেছেন:
+> hadith "তোমরা সাহরি খাও, কারণ সাহরিতে বরকত রয়েছে।" "সহীহ বুখারী ১৯২৩; সহীহ মুসলিম ১০৯৫"
+baba (happy, palm, to=child): বেশি খাওয়া জরুরি নয়। অল্প হলেও সাহরি খেলে সারাদিন শক্তি পাওয়া যায়।
+> hadith off
+ma (happy, show_hands, to=child): আজ ভাত, ডাল আর খেজুর আছে। আর এক গ্লাস দুধ।
+child (happy, chest, to=ma): বিসমিল্লাহ! আম্মু, আমি এক বাটি ভাতই খেয়ে ফেলব!
+baba (happy, open, to=child): আর মনে মনে নিয়ত করে নাও যে, আল্লাহর জন্য রোজা রাখছি।
+child (happy, chest, to=baba): জি আব্বু! আল্লাহর জন্য রোজা রাখছি, ইনশাআল্লাহ। || ma:laugh
+
+# ---------------- 2. যোহরের পর ----------------
+SCENE masjid_yard: hujur@0.25:right student@0.68:left
+student (angry, fist, to=hujur): হুজুর, রোজার দিনে মাথা ঠিক থাকে না! আজ ফলের দোকানদার আমাকে ঠকিয়েছে, তাই আমি তাকে কড়া গালি দিয়ে এসেছি!
+hujur (surprised, palm, to=student): আসতাগফিরুল্লাহ! রাকিব, তুমি রোজাদার, আর মুখ দিয়ে গালি?
+student (angry, shrug, to=hujur): কিন্তু হুজুর, সে তো আমাকে ঠকিয়েছে! আমার কি রাগ করার অধিকার নেই?
+hujur (happy, chest, to=student): রাগ হতেই পারে, বাবা। কিন্তু রোজা শুধু না খেয়ে থাকার নাম নয়। নবীজি সাল্লাল্লাহু আলাইহি ওয়াসাল্লাম বলেছেন:
+> hadith "যে ব্যক্তি মিথ্যা কথা ও মিথ্যা কাজ ছাড়ে না, তার খাওয়া-দাওয়া ছেড়ে দেওয়ায় আল্লাহর কোনো প্রয়োজন নেই।" "সহীহ বুখারী ১৯০৩"
+student (sad, chest, to=hujur): মানে, মুখ আর হাতও রোজা রাখবে?
+hujur (happy, raise, to=student): ঠিক ধরেছ। চোখ, কান, জিহ্বা, সবই রোজা রাখবে। আর কেউ ঝগড়া করতে এলে নবীজি বলেছেন, শুধু বলো: আমি রোজাদার।
+> hadith off
+student (thinking, palm, to=hujur): আমি রোজাদার... শুনতে কিন্তু খুব শান্ত লাগে! || hujur:laugh
+hujur (happy, open, to=student): তাই তো! এখন গিয়ে দোকানদারের কাছে ক্ষমা চেয়ে নাও।
+> tip "রোজায় মুখ, চোখ আর হাতকেও গুনাহ থেকে বাঁচাও।"
+student (sad, chest, to=hujur): ক্ষমা চাইতে লজ্জা লাগছে। কিন্তু আমি যাব, ইনশাআল্লাহ। আর দোকানদার চাচাকে আজ ইফতারের দাওয়াতও দেব।
+hujur (happy, show_hands, to=student): মাশাআল্লাহ! এটাই তো ঠিক পথ। যাও, আল্লাহ তোমার সাথে আছেন।
+> tip off
+> exit student to right 2.0
+
+# ---------------- 3. ইফতার ----------------
+SCENE home_evening: baba@0.18:right ma@0.34:right child@0.70:left jannat@0.86:left
+> prop dastarkhan at 0.50 scale 0.72
+child (nervous, shrug, to=ma): আম্মু, আমার পেট ডাকছে! আর কত দেরি? আমি তো মরে যাচ্ছি!
+jannat (happy, raise, to=child): ভাইয়া, তুমি সাহরির পর থেকে আটবার এই কথা বলেছ! আমি গুনেছি! || baba:laugh
+ma (happy, palm, to=child): আর একটু ধৈর্য ধরো, বাবা। আযান হলেই আমরা ইফতার করব।
+> enter student from right to 0.52 happy 2
+student (happy, open, to=baba): আসসালামু আলাইকুম, চাচা! আমি ফল-দোকানদারকে ক্ষমা চেয়ে এলাম। উনিও এসেছেন, বাইরে দাঁড়িয়ে আছেন।
+baba (happy, chest, to=student): মাশাআল্লাহ রাকিব! ওঁকেও ভেতরে ডেকে আনো, আজ আমরা সবাই একসাথে ইফতার করব।
+ma (happy, show_hands, to=baba): এটা তো আরও ভালো হলো! নবীজি সাল্লাল্লাহু আলাইহি ওয়াসাল্লাম বলেছেন:
+> hadith "যে কোনো রোজাদারকে ইফতার করায়, সে রোজাদারের সমান সওয়াব পায়। অথচ রোজাদারের সওয়াব একটুও কমে না।" "জামে তিরমিযী ৮০৭"
+child (surprised, raise, to=ma): মানে, আমরা আরেকজনকে ইফতার করালে আমাদেরও সওয়াব হবে?
+ma (happy, palm, to=child): হ্যাঁ বাবা। আর আল্লাহ তাআলা তোমাকেও তোমার রোজার পুরো সওয়াব দেবেন।
+> hadith off
+jannat (happy, chest, to=ma): আম্মু, আযান হয়ে গেছে! আমি শুনেছি!
+baba (happy, chest, to=child): আলহামদুলিল্লাহ। এবার দেরি না করে ইফতার করো। নবীজি সাল্লাল্লাহু আলাইহি ওয়াসাল্লাম বলেছেন:
+> hadith "মানুষ ততদিন কল্যাণের ওপর থাকবে, যতদিন তারা তাড়াতাড়ি ইফতার করবে।" "সহীহ বুখারী ১৯৫৭; সহীহ মুসলিম ১০৯৮"
+child (happy, show_hands, to=baba): আব্বু, এটা তো আমার সবচেয়ে প্রিয় হাদীস! || ma:laugh
+baba (happy, open, to=child): আগে দোয়া পড়ো, তারপর খেজুর খাও। খেজুর দিয়ে ইফতার করা সুন্নত।
+> hadith off
+child (happy, chest, to=baba): বিসমিল্লাহ! আহ, এত মিষ্টি খেজুর জীবনেও খাইনি!
+jannat (surprised, open, to=child): ভাইয়া, এটা তো তোমার প্রথম রোজার খেজুর, তাই এত মিষ্টি লাগছে! || student:laugh
+> tip "তাড়াতাড়ি ইফতার করো। অন্যকেও ইফতার করাও।"
+student (happy, chest, to=baba): আর চাচা, ফলের দোকানদার চাচা বললেন, আজ থেকে আমাকে সবচেয়ে ভালো ফলটাই দেবেন। সেজন্য বললাম, ক্ষমা চাওয়া সত্যিই ভালো!
+baba (happy, show_hands, to=student): দেখলে তো, ভালো আচরণ ভালো ফল দেয়, আর আক্ষরিক অর্থেই! || ma:laugh
+> tip off
+> prop dastarkhan off
+
+# ---------------- 4. তারাবিহর পর ----------------
+SCENE masjid_evening: hujur@0.28:right baba@0.52:right child@0.76:left
+hujur (happy, open, to=child): মাশাআল্লাহ মাহির! শুনলাম আজ তুমি পুরো রোজা রেখেছ!
+child (happy, chest, to=hujur): জি হুজুর! আমি একটুও কান্না করিনি, শুধু একবার... আটবার বলেছি যে ক্ষুধা পেয়েছে। || baba:laugh
+hujur (happy, palm, to=child): কোনো সমস্যা নেই। রোজার কষ্টও আল্লাহর কাছে অনেক দামি। নবীজি সাল্লাল্লাহু আলাইহি ওয়াসাল্লাম বলেছেন:
+> hadith "যে ঈমান ও সওয়াবের আশায় রমজানের রোজা রাখে, তার পূর্বের গুনাহ মাফ করা হয়।" "সহীহ বুখারী ৩৮; সহীহ মুসলিম ৭৬০"
+baba (happy, chest, to=hujur): আলহামদুলিল্লাহ। এই পুরো দিনটাই আমাদের অনেক কিছু শিখিয়ে দিল।
+hujur (happy, raise, to=child): ঠিক বলেছেন। চলো, আজকের পাঁচটা শিক্ষা আবার মনে করি। এক, সাহরি খাওয়া।
+> hadith off
+child (happy, chest, to=hujur): দুই, রোজায় মুখ আর হাতকে খারাপ কাজ থেকে বাঁচানো!
+baba (happy, palm, to=hujur): তিন, রোজাদারকে ইফতার করানো। চার, দেরি না করে ইফতার করা।
+hujur (happy, open, to=child): আর পাঁচ, সব কাজের নিয়ত আল্লাহর জন্য রাখা।
+> tip "সাহরি খাও · মুখ ও হাত সংযত রাখো · ইফতার করাও · সময়মতো ইফতার করো · নিয়ত খাঁটি রাখো।"
+child (happy, show_hands, to=hujur): আর ছয় নম্বর শিক্ষা, আম্মুর রান্না সবচেয়ে সেরা! || baba:laugh
+hujur (happy, show_hands, to=child): এটা অবশ্য হাদীসে নেই, কিন্তু মাকে সম্মান করা তো আছে! তাই এটাও মেনে নিলাম। || baba:laugh
+hujur (happy, chest, to=baba): আল্লাহ আমাদের সবার রোজা, তারাবিহ আর দোয়া কবুল করুন। আমিন।
+baba (happy, chest, to=hujur): আমিন, ইয়া রাব্বাল আলামিন।
+> tip off
+
+END: রমজান মোবারক | ভালো লাগলে শেয়ার করুন | 4

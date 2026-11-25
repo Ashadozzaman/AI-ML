@@ -1,0 +1,29 @@
+# প্রতিবেশীর হক (Neighbours) - about 1 min 30 s.   Hadith: Sahih Bukhari 6014, Sahih Muslim 2624
+THEME: islamic
+TITLE: প্রতিবেশীর হক | ছোটদের জন্য ইসলামিক শিক্ষা | 2.6
+
+CHARACTERS:
+ma    | মা    | ma    | voice=bn-BD-NabanitaNeural rate=-2
+child | মাহির | child | voice=bn-BD-PradeepNeural rate=4 fx=3
+hujur | হুজুর | hujur | voice=bn-IN-BashkarNeural rate=-8
+
+SCENE home: ma@0.28:right child@0.70:left
+ma (happy, open, to=child): আজ গরুর মাংসের ঝোল রান্না করেছি। অনেক বেশি হয়েছে, বাবা।
+child (happy, show_hands, to=ma): দারুণ! তাহলে আজ আমি তিন প্লেট খাব! || ma:laugh
+ma (thinking, palm, to=child): তুমি দুই প্লেট খাও, আর একটা বাটি আমরা পাশের বাড়িতে পাঠাব। ওদের বাড়িতে হুজুর একা থাকেন।
+child (sad, shrug, to=ma): কিন্তু আম্মু, তাহলে আমার ভাগ কমে যাবে!
+ma (happy, chest, to=child): মাহির, নবীজি সাল্লাল্লাহু আলাইহি ওয়াসাল্লাম বলেছেন:
+> hadith "জিবরীল আমাকে প্রতিবেশীর ব্যাপারে এত বেশি উপদেশ দিতেন যে আমি ভাবলাম, তিনি হয়তো তাকে উত্তরাধিকারীই বানিয়ে দেবেন।" "সহীহ বুখারী ৬০১৪; সহীহ মুসলিম ২৬২৪"
+ma (happy, palm, to=child): প্রতিবেশীর হক এতটাই গুরুত্বপূর্ণ। তাই তাদের খোঁজ নিতে হবে, তাদের সাথে ভালো ব্যবহার করতে হবে।
+> hadith off
+child (happy, chest, to=ma): ঠিক আছে আম্মু। আমি নিজেই বাটিটা নিয়ে যাব, ইনশাআল্লাহ।
+SCENE masjid_yard: child@0.30:right hujur@0.72:left
+child (happy, open, to=hujur): আসসালামু আলাইকুম হুজুর! আম্মু আপনার জন্য একটু ঝোল পাঠিয়েছেন।
+hujur (surprised, palm, to=child): ওয়ালাইকুমুস সালাম! মাশাআল্লাহ, সুবহানাল্লাহ! আজ সকাল থেকে ভাবছিলাম, রান্না করব কি না।
+child (happy, show_hands, to=hujur): আম্মু বলেছেন, প্রতিবেশীর খোঁজ রাখা খুব দরকার।
+> tip "প্রতিবেশীর খোঁজ নাও। খাবার ভাগ করে খাও।"
+hujur (happy, chest, to=child): জাযাকাল্লাহু খাইরান, বাবা। তোমার আম্মুকে আমার সালাম দিয়ো। আর আল্লাহ তোমাদের বাড়িতে বরকত দিন।
+child (happy, chest, to=hujur): আমিন! আর হুজুর, বাটিটা কিন্তু আজই ফেরত চাই, কারণ ওটা আমাদের সবচেয়ে বড় বাটি! || hujur:laugh
+> tip off
+
+END: আল্লাহ হাফেজ | ভালো লাগলে শেয়ার করুন | 3

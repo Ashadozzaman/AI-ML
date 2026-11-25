@@ -1,0 +1,31 @@
+# নিজের জন্য যা পছন্দ, অন্যের জন্যও (Love for others what you love for yourself) - about 1 min 15 s.   Hadith: Sahih Bukhari 13, Sahih Muslim 45
+THEME: islamic
+TITLE: নিজের জন্য যা পছন্দ, অন্যের জন্যও | ছোটদের জন্য ইসলামিক গল্প | 2.6
+
+CHARACTERS:
+ma     | মা      | ma    | voice=bn-BD-NabanitaNeural rate=-2
+child  | মাহির   | child | voice=bn-BD-PradeepNeural rate=4 fx=3
+jannat | জান্নাত | girl  | voice=bn-IN-TanishaaNeural rate=4
+
+SCENE home: child@0.30:right jannat@0.70:left
+> prop dastarkhan at 0.50 scale 0.6
+child (happy, show_hands, to=jannat): বাহ! শেষ রসগোল্লাটা আমার! আমি আগে দেখেছি! || jannat:sad
+jannat (sad, shrug, to=child): ভাইয়া, আমি তো একটাও খাইনি... সব তুমিই খেয়ে ফেলেছ।
+child (smirk, chest, to=jannat): কিন্তু আমার খুব পছন্দের মিষ্টি! তুই পরে খাবি।
+> enter ma from right to 0.90 happy 2
+ma (surprised, palm, to=child): কী হয়েছে তোমাদের? জান্নাত মন খারাপ করে আছে কেন?
+jannat (sad, open, to=ma): আম্মু, ভাইয়া শেষ রসগোল্লাটাও নিজের জন্য রেখে দিয়েছে।
+ma (thinking, palm, to=child): মাহির, মনে করো, জান্নাত যদি তোমার সামনে এভাবে মিষ্টি লুকিয়ে রাখত, তোমার কেমন লাগত?
+child (sad, chest, to=ma): খুব খারাপ লাগত, আম্মু...
+ma (happy, chest, to=child): নবীজি সাল্লাল্লাহু আলাইহি ওয়াসাল্লাম বলেছেন:
+> hadith "তোমাদের কেউ প্রকৃত মুমিন হবে না, যতক্ষণ না নিজের জন্য যা পছন্দ করে, তার ভাইয়ের জন্যও তা পছন্দ করে।" "সহীহ বুখারী ১৩; সহীহ মুসলিম ৪৫"
+ma (happy, palm, to=child): তুমি নিজের জন্য যেমন ভালো জিনিস চাও, ভাই-বোনের জন্যও তেমনই চাইবে।
+> hadith off
+child (happy, chest, to=jannat): জান্নাত, ঠিক আছে। রসগোল্লাটা আমরা দুজনে ভাগ করে খাব।
+> tip "নিজের জন্য যা চাও, অন্যের জন্যও তা-ই চাও।"
+jannat (happy, raise, to=child): সত্যি ভাইয়া? তাহলে তুমি বড় অংশটা নাও! || ma:laugh
+child (surprised, shrug, to=jannat): আরে, এটা তো ভাগাভাগির কথা! তুইও ভালো অংশটা বেছে নিচ্ছিস!
+> tip off
+> prop dastarkhan off
+
+END: আল্লাহ হাফেজ | ভালো লাগলে শেয়ার করুন | 3
